@@ -99,6 +99,7 @@ export default function App() {
   const { ref: ref7, inView: inView7 } = useInView({ threshold: 0.1 });
   const { ref: ref8, inView: inView8 } = useInView({ threshold: 0.1 });
   const { ref: ref9, inView: inView9 } = useInView({ threshold: 0.1 });
+  const { ref: ref10, inView: inView10 } = useInView({ threshold: 0.1 });
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -296,11 +297,11 @@ export default function App() {
               >
                 Assalamu'alaikum Wr. Wb.
               </h3> */}
-              <div ref={ref3}>
+              <div ref={ref10}>
                 <div className="flex justify-center items-center">
                   <div
                     className={`w-40 h-60 border border-white rounded-full overflow-hidden relative ${
-                      inView3 ? "animate-zoom-in" : "opacity-0"
+                      inView10 ? "animate-zoom-in" : "opacity-0"
                     }`}
                   >
                     <img
@@ -312,9 +313,9 @@ export default function App() {
                 </div>
                 <div className="p-6">
                   <p
-                    ref={ref2}
+                    ref={ref10}
                     className={`text-xs font-serif mb-4 ${
-                      inView2 ? "animate-fade-in-up" : "opacity-0"
+                      inView10 ? "animate-fade-in-up" : "opacity-0"
                     }`}
                   >
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -331,7 +332,7 @@ export default function App() {
                   </p> */}
                   <h2
                     className={`text-2xl font-bold text-gray-800 mb-2 ${
-                      inView3 ? "animate-letter-spacing" : "opacity-0"
+                      inView10 ? "animate-letter-spacing" : "opacity-0"
                     }`}
                   >
                     Nofridho & Nadya
