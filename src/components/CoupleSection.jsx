@@ -47,10 +47,9 @@ const CoupleSection = ({
           inView3 && inView4 ? "opacity-100" : "opacity-0"
         } transition-opacity duration-500`}
       />
-      {/* Gambar dengan border lingkaran */}
       <h3
         ref={ref2}
-        className={`text-2xl md:text-4xl font-serif font-bold mb-4 ${
+        className={`text-2xl md:text-4xl charm-bold text-yellow-900 mb-4 ${
           inView2 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
@@ -58,7 +57,7 @@ const CoupleSection = ({
       </h3>
       <p
         ref={ref2}
-        className={`text-xs font-serif mb-4 ${
+        className={`text-xs charm-regular text-yellow-800 mb-4 ${
           inView2 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
@@ -73,7 +72,7 @@ const CoupleSection = ({
             }`}
           >
             <img
-              src="/1.jpeg"
+              src="/6.jpeg"
               alt="Nofridho & Nadya"
               className="w-full h-full object-cover"
             />
@@ -81,14 +80,14 @@ const CoupleSection = ({
         </div>
         <div className="p-6">
           <h2
-            className={`text-2xl font-bold text-gray-800 mb-2 ${
+            className={`text-2xl tangerine-bold text-yellow-900 mb-2 ${
               inView3 ? "animate-letter-spacing" : "opacity-0"
             }`}
           >
             Rohadatul Nadya Maurani, S.Si
           </h2>
           <p
-            className={`text-gray-700 leading-tight mb-4 ${
+            className={`text-gray-700 charm-regular text-yellow-800 leading-tight mb-4 ${
               inView3 ? "animate-fade-in-up" : "opacity-0"
             }`}
           >
@@ -118,7 +117,7 @@ const CoupleSection = ({
         </div>
       </div>
       <div
-        className={`text-4xl md:text-6xl font-bold text-gray-800 my-4 ${
+        className={`text-4xl md:text-6xl tangerine-bold text-yellow-900 my-4 ${
           inView3 && inView4 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
@@ -132,7 +131,7 @@ const CoupleSection = ({
             }`}
           >
             <img
-              src="/1.jpeg"
+              src="/6.jpeg"
               alt="Nofridho & Nadya"
               className="w-full h-full object-cover"
             />
@@ -140,14 +139,14 @@ const CoupleSection = ({
         </div>
         <div className="p-6">
           <h2
-            className={`text-2xl font-bold text-gray-800 mb-2 ${
+            className={`text-2xl tangerine-bold text-yellow-900 mb-2 ${
               inView4 ? "animate-letter-spacing" : "opacity-0"
             }`}
           >
             Nofridho Aulya, S.sos
           </h2>
           <p
-            className={`text-gray-700 leading-tight mb-4 ${
+            className={`text-gray-700 charm-regular text-yellow-800 leading-tight mb-4 ${
               inView4 ? "animate-fade-in-up" : "opacity-0"
             }`}
           >
@@ -179,4 +178,5 @@ const CoupleSection = ({
     </div>
   );
 };
+
 export default CoupleSection;

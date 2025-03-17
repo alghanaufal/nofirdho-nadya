@@ -29,7 +29,7 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
     >
       {/* Judul */}
       <h2
-        className={`text-2xl md:text-4xl font-serif font-bold drop-shadow-lg mb-26 ${
+        className={`text-2xl md:text-4xl font-serif font-bold drop-shadow-lg mb-26 charm-bold text-yellow-900 ${
           inView8 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
@@ -48,14 +48,14 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
               isOpen ? "-translate-y-22 duration-1000" : ""
             } bg-white w-full h-full absolute`}
           >
-            <p className="text-xl sm:text-2xl font-semibold text-gray-500 font-serif">
-              Lorem, ipsum.
+            <p className="text-xl sm:text-2xl font-semibold text-gray-500 tangerine-bold">
+              ROHADATUL NADYA
             </p>
-            <p className="px-10 text-[10px] sm:text-[12px] text-gray-700">
-              Lorem ipsum dolor sit amet.
+            <p className="px-10 text-[10px] sm:text-[12px] text-gray-700 hedvig-letters-serif-text">
+              Bank Mandiri
             </p>
-            <p className="font-serif text-[10px] sm:text-[12px] text-gray-700">
-              Lorem ipsum dolor sit amet consectetur.
+            <p className="font-serif text-[10px] sm:text-[12px] text-gray-700 charm-regular">
+              1560022744793
             </p>
           </div>
 

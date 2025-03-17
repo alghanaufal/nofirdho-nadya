@@ -35,14 +35,14 @@ const RSVPSection = ({
       >
         {/* Judul */}
         <h2
-          className={`text-2xl md:text-4xl font-serif font-bold mb-4 text-gray-700 ${
+          className={`text-2xl md:text-4xl charm-bold text-yellow-900 ${
             inView7 ? "animate-fade-in-up delay-100" : "opacity-0"
           }`}
         >
           Wishes
         </h2>
         <p
-          className={`text-gray-600 ${
+          className={`text-gray-600 text-sm font-serif ${
             inView7 ? "animate-fade-in-up delay-200" : "opacity-0"
           }`}
         >
@@ -55,10 +55,10 @@ const RSVPSection = ({
             inView7 ? "animate-fade-in-up delay-300" : "opacity-0"
           }`}
         >
-          <div className="bg-green-300 px-4 py-2 rounded text-white font-semibold">
+          <div className="bg-green-300 px-4 py-2 rounded text-white font-semibold montecarlo-regular">
             ✅ {attending} Hadir
           </div>
-          <div className="bg-red-300 px-4 py-2 rounded text-white font-semibold">
+          <div className="bg-red-300 px-4 py-2 rounded text-white font-semibold montecarlo-regular">
             ❌ {notAttending} Tidak Hadir
           </div>
         </div>
@@ -70,7 +70,7 @@ const RSVPSection = ({
             placeholder="Nama"
             value={name}
             onChange={(e) => setPost({ ...post, name: e.target.value })}
-            className={`w-full px-3 py-2 border rounded-md bg-white ${
+            className={`w-full px-3 py-2 border rounded-md bg-white charm-bold ${
               inView7 ? "animate-fade-in-up delay-400" : "opacity-0"
             }`}
           />
@@ -79,7 +79,7 @@ const RSVPSection = ({
             placeholder="Pesan"
             value={address}
             onChange={(e) => setPost({ ...post, address: e.target.value })}
-            className={`w-full px-3 py-2 border rounded-md bg-white ${
+            className={`w-full px-3 py-2 border rounded-md bg-white charm-bold ${
               inView7 ? "animate-fade-in-up delay-600" : "opacity-0"
             }`}
           />
@@ -92,7 +92,7 @@ const RSVPSection = ({
             <button
               type="button"
               onClick={() => setPost({ ...post, presence: true })}
-              className={`flex-1 py-2 rounded-md font-semibold ${
+              className={`flex-1 py-2 rounded-md font-semibold montecarlo-regular ${
                 presence === true
                   ? "bg-green-500 text-white"
                   : "bg-green-200 text-green-700"
@@ -103,7 +103,7 @@ const RSVPSection = ({
             <button
               type="button"
               onClick={() => setPost({ ...post, presence: false })}
-              className={`flex-1 py-2 rounded-md font-semibold ${
+              className={`flex-1 py-2 rounded-md font-semibold montecarlo-regular ${
                 presence === false
                   ? "bg-red-500 text-white"
                   : "bg-red-200 text-red-700"
@@ -118,7 +118,7 @@ const RSVPSection = ({
               placeholder="Jumlah Tamu"
               value={quantity}
               onChange={(e) => setPost({ ...post, quantity: e.target.value })}
-              className={`w-full px-3 py-2 border rounded-md bg-white ${
+              className={`w-full px-3 py-2 border rounded-md bg-white hedvig-letters-serif-text ${
                 inView7 ? "animate-fade-in-up delay-500" : "opacity-0"
               }`}
             />
@@ -126,7 +126,7 @@ const RSVPSection = ({
           {/* Tombol Kirim */}
           <button
             type="submit"
-            className={`w-full bg-yellow-500 py-2 rounded-md font-semibold text-white ${
+            className={`w-full bg-yellow-500 py-2 rounded-md font-semibold text-white montecarlo-regular ${
               inView7 ? "animate-fade-in-up delay-800" : "opacity-0"
             }`}
             onClick={createPost}
@@ -141,18 +141,22 @@ const RSVPSection = ({
             inView7 ? "animate-fade-in-up delay-900" : "opacity-0"
           }`}
         >
-          <h3 className="font-semibold mb-2 text-gray-700">Komentar:</h3>
+          <h3 className="font-semibold mb-2 text-gray-700 tangerine-bold">
+            Komentar:
+          </h3>
           <div className="space-y-2 h-112 overflow-y-auto">
             {currentPosts.map((post) => (
               <div
                 className="bg-white p-3 rounded-lg shadow border border-gray-300"
                 key={post.id}
               >
-                <p className="font-semibold text-gray-700">
+                <p className="font-semibold text-gray-700 charm-bold">
                   {post.name} {post.presence ? "✅" : "❌"}
                 </p>
-                <p className="text-gray-600">{post.address}</p>
-                <p className="text-gray-500 text-sm">
+                <p className="text-gray-600 hedvig-letters-serif-text">
+                  {post.address}
+                </p>
+                <p className="text-gray-500 text-sm hedvig-letters-serif-text">
                   {new Date(post.time).toLocaleString()}
                 </p>
               </div>
@@ -165,7 +169,7 @@ const RSVPSection = ({
               <button
                 key={index}
                 onClick={() => paginate(index + 1)}
-                className={`mx-1 px-3 py-1 rounded-md ${
+                className={`mx-1 px-3 py-1 rounded-md tangerine-regular ${
                   currentPage === index + 1
                     ? "bg-yellow-500 text-white"
                     : "bg-gray-200 text-gray-700"

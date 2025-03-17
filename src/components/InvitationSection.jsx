@@ -2,7 +2,6 @@ import React from "react";
 
 const InvitationSection = ({ ref1, inView1, bgImage }) => {
   return (
-    // Invitation section
     <div
       className="min-h-screen flex flex-col items-center justify-center text-center p-4 relative"
       style={{
@@ -15,7 +14,6 @@ const InvitationSection = ({ ref1, inView1, bgImage }) => {
         className="flex flex-col justify-center items-center min-h-screen m-4 relative"
         ref={ref1}
       >
-        {/* Bunga di sebelah kiri */}
         <img
           src="/bunga2.png"
           alt="Bunga"
@@ -23,7 +21,6 @@ const InvitationSection = ({ ref1, inView1, bgImage }) => {
             inView1 ? "opacity-100" : "opacity-0"
           } transition-opacity duration-500`}
         />
-        {/* Bunga di sebelah kanan */}
         <img
           src="/bunga2.png"
           alt="Bunga"
@@ -31,7 +28,6 @@ const InvitationSection = ({ ref1, inView1, bgImage }) => {
             inView1 ? "opacity-100" : "opacity-0"
           } transition-opacity duration-500`}
         />
-        {/* Konten undangan */}
         <div className="bg-white rounded-3xl shadow-lg overflow-hidden max-w-lg w-full relative z-0">
           <img
             src="/1.jpeg"
@@ -40,7 +36,7 @@ const InvitationSection = ({ ref1, inView1, bgImage }) => {
           />
           <div className="p-6">
             <p
-              className={`text-gray-700 text-justify leading-tight mb-4 ${
+              className={`text-gray-700 text-justify leading-tight mb-4 tangerine-regular text-yellow-900 ${
                 inView1 ? "animate-fade-in-scale" : ""
               }`}
             >
@@ -52,7 +48,7 @@ const InvitationSection = ({ ref1, inView1, bgImage }) => {
               berpikir"
             </p>
             <h2
-              className={`text-2xl font-bold text-gray-800 mb-2 ${
+              className={`text-2xl font-bold text-gray-800 mb-2 charm-bold text-yellow-800 ${
                 inView1 ? "animate-fade-in-scale" : ""
               }`}
             >

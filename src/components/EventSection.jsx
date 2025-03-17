@@ -3,7 +3,7 @@ import React from "react";
 const EventSection = ({ ref6, inView6, bgImage }) => {
   return (
     <div
-      ref={ref6} // Gunakan ref6 untuk memantau container
+      ref={ref6}
       className="flex flex-col items-center p-12"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
@@ -13,8 +13,8 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
           inView6 ? "animate-fade-in-up" : "opacity-0"
         }`}
         style={{
-          backgroundColor: "rgba(255, 255, 255, 0.8)",
-          boxShadow: "0 0 10px #FF8C00, 0 0 30px #FFD700",
+          backgroundColor: "rgba(255, 255, 255, 0.85)",
+          boxShadow: "0 0 15px #FFD700, 0 0 40px #FF8C00",
         }}
       >
         <img
@@ -36,12 +36,16 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
             inView6 ? "animate-fade-in-up delay-400" : "opacity-0"
           } transition-opacity duration-500`}
         />
-        <h2 className="text-lg font-serif font-semibold mt-2">AKAD NIKAH</h2>
-        <p className="text-gray-600 mt-2 font-serif font-medium">
+        <h2 className="text-lg charm-bold text-yellow-800 mt-2 drop-shadow-lg">
+          AKAD NIKAH
+        </h2>
+        <p className="text-gray-700 mt-2 tangerine-regular text-xl font-medium">
           Sabtu, 03 Mei 2025
         </p>
-        <p className="text-gray-600">10.00 WIB - Selesai</p>
-        <p className="text-gray-600">
+        <p className="text-gray-700 tangerine-regular text-lg">
+          10.00 WIB - Selesai
+        </p>
+        <p className="text-gray-600 text-sm font-serif">
           Perumahan Pondok Timur Indah 1, jalan Harimau III no.81A RT/RW 009/017
           Kel.Jatimulya Kec.Tambun Selatan Bekasi Timur 17510
         </p>
@@ -49,10 +53,10 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
         {/* Lokasi Map */}
         <div className="mt-4 w-full flex justify-center">
           <a
-            href="https://maps.app.goo.gl/nT3LnFo4xuWo3gMA8" // Link Google Maps
-            target="_blank" // Buka di tab baru
-            rel="noopener noreferrer" // Untuk keamanan
-            className={`bg-amber-400 text-gray-800 px-6 py-2 rounded-full hover:bg-gray-300 transition ${
+            href="https://maps.app.goo.gl/nT3LnFo4xuWo3gMA8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`bg-amber-500 text-gray-900 px-6 py-2 rounded-full hover:bg-gray-300 transition ${
               inView6 ? "animate-fade-in-up delay-100" : "opacity-0"
             }`}
           >
@@ -60,21 +64,17 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
           </a>
         </div>
       </div>
+
       {/* Bagian Resepsi Nikah */}
       <div
         className={`w-full max-w-md rounded-b-full shadow-lg relative text-center px-6 pb-26 pt-4 ${
           inView6 ? "animate-fade-in-up delay-200" : "opacity-0"
         }`}
         style={{
-          backgroundColor: "rgba(255, 255, 255, 0.8)",
-          boxShadow: "0 0 10px #FF8C00, 0 0 30px #FFD700",
+          backgroundColor: "rgba(255, 255, 255, 0.85)",
+          boxShadow: "0 0 15px #FFD700, 0 0 40px #FF8C00",
         }}
       >
-        {/* <img
-          src="/bunga6.png"
-          alt="Bunga"
-          className="absolute -top-22 left-1/2 -translate-x-1/2 w-88 h-64"
-        /> */}
         <img
           src="/bunga1.png"
           alt="Bunga"
@@ -89,22 +89,27 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
             inView6 ? "animate-fade-in-up delay-400" : "opacity-0"
           } transition-opacity duration-500`}
         />
-        <h2 className="text-lg font-serif font-semibold mt-2">RESEPSI NIKAH</h2>
-        <p className="text-gray-600 mt-2 font-serif font-medium">
+        <h2 className="text-lg charm-bold text-yellow-800 mt-2 drop-shadow-lg">
+          RESEPSI NIKAH
+        </h2>
+        <p className="text-gray-700 mt-2 tangerine-regular text-xl font-medium">
           Sabtu, 03 Mei 2025
         </p>
-        <p className="text-gray-600">12.30 WIB - Selesai</p>
-        <p className="text-gray-600">
+        <p className="text-gray-700 tangerine-regular text-lg">
+          12.30 WIB - Selesai
+        </p>
+        <p className="text-gray-600 text-sm font-serif">
           Perumahan Pondok Timur Indah 1, jalan Harimau III no.81A RT/RW 009/017
           Kel.Jatimulya Kec.Tambun Selatan Bekasi Timur 17510
         </p>
+
         {/* Lokasi Map */}
         <div className="mt-4 w-full flex justify-center">
           <a
-            href="https://maps.app.goo.gl/nT3LnFo4xuWo3gMA8" // Link Google Maps
-            target="_blank" // Buka di tab baru
-            rel="noopener noreferrer" // Untuk keamanan
-            className={`bg-amber-400 text-gray-800 px-6 py-2 rounded-full hover:bg-gray-300 transition ${
+            href="https://maps.app.goo.gl/nT3LnFo4xuWo3gMA8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`bg-amber-500 text-gray-900 px-6 py-2 rounded-full hover:bg-gray-300 transition ${
               inView6 ? "animate-fade-in-up delay-300" : "opacity-0"
             }`}
           >

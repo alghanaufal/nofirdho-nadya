@@ -3,9 +3,13 @@ import React from "react";
 const GallerySection = ({ ref9, inView9, images, bgImage }) => {
   return (
     <div className="p-10" style={{ backgroundImage: `url(${bgImage})` }}>
-      <h3 className="text-2xl md:text-4xl font-serif font-bold mb-4">
-        Galeri Kami
-      </h3>
+      <h2
+        className={`text-2xl md:text-4xl font-serif font-bold drop-shadow-lg mb-6 charm-bold text-yellow-900 ${
+          inView9 ? "animate-fade-in-up" : "opacity-0"
+        }`}
+      >
+        Wedding Gift
+      </h2>
       <div
         ref={ref9} // Ref untuk Intersection Observer
         className={`gallery ${inView9 ? "animate-fade-in-up" : ""}`} // Tambahkan class animasi saat inView true

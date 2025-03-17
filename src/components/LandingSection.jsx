@@ -24,29 +24,29 @@ const LandingSection = ({ guestName, handleScroll }) => {
             className="w-full h-full object-cover animate-pull-in block mx-auto"
           />
         </div>
-        <h2 className="text-sm text-gray-500 m-2 animate-fade-in-up">
+        <h2 className="text-sm text-yellow-700 m-2 animate-fade-in-up montecarlo-regular">
           THE WEDDING OF
         </h2>
-        <h1 className="text-3xl md:text-5xl font-serif font-bold mb-4 animate-fade-in-scale animate-letter-spacing">
+        <h1 className="text-3xl md:text-5xl charm-bold mb-4 animate-fade-in-scale animate-letter-spacing text-black">
           NOFRIDHO <br />&<br /> NADYA
         </h1>
         <p
-          className="text-gray-600 mb-4 animate-fade-in-up"
+          className="text-gray-800 mb-4 animate-fade-in-up charm-regular"
           style={{ animationDelay: "0.8s", zIndex: 100 }}
         >
           Kepada Yth.
           <br />
-          <span className="font-semibold font-serif">{guestName}</span>
+          <span className="tangerine-bold text-yellow-900">{guestName}</span>
         </p>
         <p
-          className="text-sm text-gray-500 mb-6 mx-2 animate-fade-in-up"
+          className="text-sm text-gray-700 mb-6 mx-2 animate-fade-in-up hedvig-letters-serif-text"
           style={{ animationDelay: "0.6s" }}
         >
           Dengan hormat, kami mengundang Anda untuk menghadiri pernikahan kami.
         </p>
         <button
           onClick={handleScroll}
-          className="bg-white text-gray-800 px-6 py-2 rounded-full hover:bg-gray-300 transition animate-fade-in-up z-[9999]"
+          className="bg-white text-yellow-900 px-6 py-2 rounded-full hover:bg-yellow-200 transition animate-fade-in-up z-[9999] charm-bold"
           style={{ animationDelay: "0.8s" }}
         >
           Buka Undangan

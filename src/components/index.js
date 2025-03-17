@@ -7,3 +7,4 @@ export { default as RSVPSection } from "./RSVPSection";
 export { default as GiftSection } from "./GiftSection";
 export { default as GallerySection } from "./GallerySection";
 export { default as MusicControl } from "./MusicControl";
+export { default as ThanksSection } from "./ThanksSection";
