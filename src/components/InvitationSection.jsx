@@ -36,7 +36,7 @@ const InvitationSection = ({ ref1, inView1, bgImage }) => {
           />
           <div className="p-6">
             <p
-              className={`text-gray-700 text-justify leading-tight mb-4 tangerine-regular text-yellow-900 ${
+              className={`text-center text-xl leading-tight mb-4 tangerine-regular text-yellow-900 ${
                 inView1 ? "animate-fade-in-scale" : ""
               }`}
             >
@@ -48,7 +48,7 @@ const InvitationSection = ({ ref1, inView1, bgImage }) => {
               berpikir"
             </p>
             <h2
-              className={`text-2xl font-bold text-gray-800 mb-2 charm-bold text-yellow-800 ${
+              className={`text-2xl font-bold mb-2 charm-bold text-yellow-800 ${
                 inView1 ? "animate-fade-in-scale" : ""
               }`}
             >

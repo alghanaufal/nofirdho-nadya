@@ -47,17 +47,17 @@ const CoupleSection = ({
           inView3 && inView4 ? "opacity-100" : "opacity-0"
         } transition-opacity duration-500`}
       />
-      <h3
+      <h2
         ref={ref2}
         className={`text-2xl md:text-4xl charm-bold text-yellow-900 mb-4 ${
           inView2 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
         Assalamu'alaikum Wr. Wb.
-      </h3>
+      </h2>
       <p
         ref={ref2}
-        className={`text-xs charm-regular text-yellow-800 mb-4 ${
+        className={`charm-regular text-yellow-800 mb-4 ${
           inView2 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
@@ -80,7 +80,7 @@ const CoupleSection = ({
         </div>
         <div className="p-6">
           <h2
-            className={`text-2xl tangerine-bold text-yellow-900 mb-2 ${
+            className={`text-4xl tangerine-bold text-yellow-900 mb-2 ${
               inView3 ? "animate-letter-spacing" : "opacity-0"
             }`}
           >
@@ -117,7 +117,7 @@ const CoupleSection = ({
         </div>
       </div>
       <div
-        className={`text-4xl md:text-6xl tangerine-bold text-yellow-900 my-4 ${
+        className={`text-6xl md:text-6xl tangerine-bold text-yellow-900 my-4 ${
           inView3 && inView4 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
@@ -139,14 +139,14 @@ const CoupleSection = ({
         </div>
         <div className="p-6">
           <h2
-            className={`text-2xl tangerine-bold text-yellow-900 mb-2 ${
+            className={`text-4xl tangerine-bold text-yellow-900 mb-2 ${
               inView4 ? "animate-letter-spacing" : "opacity-0"
             }`}
           >
             Nofridho Aulya, S.sos
           </h2>
           <p
-            className={`text-gray-700 charm-regular text-yellow-800 leading-tight mb-4 ${
+            className={`charm-regular text-yellow-800 leading-tight mb-4 ${
               inView4 ? "animate-fade-in-up" : "opacity-0"
             }`}
           >

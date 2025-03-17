@@ -8,7 +8,7 @@ const GallerySection = ({ ref9, inView9, images, bgImage }) => {
           inView9 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
-        Wedding Gift
+        Gallery
       </h2>
       <div
         ref={ref9} // Ref untuk Intersection Observer

@@ -29,12 +29,20 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
     >
       {/* Judul */}
       <h2
-        className={`text-2xl md:text-4xl font-serif font-bold drop-shadow-lg mb-26 charm-bold text-yellow-900 ${
+        className={`text-2xl md:text-4xl font-bold drop-shadow-lg charm-bold text-yellow-900 ${
           inView8 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
         Wedding Gift
       </h2>
+      <p
+        className={`text-gray-600 text-sm text-xs hedvig-letters-serif-text mb-26 ${
+          inView8 ? "animate-fade-in-up delay-200" : "opacity-0"
+        }`}
+      >
+        Bagi yang ingin memberikan tanda kasih dapat mengirimkan melalui fitur
+        dibawah ini :
+      </p>
       {/* Card */}
       <div className="card">
         <div
@@ -54,7 +62,7 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
             <p className="px-10 text-[10px] sm:text-[12px] text-gray-700 hedvig-letters-serif-text">
               Bank Mandiri
             </p>
-            <p className="font-serif text-[10px] sm:text-[12px] text-gray-700 charm-regular">
+            <p className="text-[10px] sm:text-[12px] text-gray-700 charm-regular">
               1560022744793
             </p>
           </div>

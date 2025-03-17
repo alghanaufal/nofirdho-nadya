@@ -56,24 +56,24 @@ const ThaksSection = ({ ref10, inView10, bgImage }) => {
                 />
               </div>
             </div>
-            <div className="p-6">
+            <div className="p-2 pt-6">
               <p
                 ref={ref10}
                 className={`text-xs charm-regular text-gray-700 mb-4 ${
                   inView10 ? "animate-fade-in-up" : "opacity-0"
                 }`}
               >
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Expedita minima veniam corporis cum perferendis porro
-                repellendus. Officiis mollitia iste, ipsa doloremque sed
-                laboriosam minima nostrum numquam ex est error omnis?
+                Menjadi sebuah kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i
+                berkenan hadir dalam hari bahagia ini. Terimakasih atas segala
+                ucapan,doa dan perhatian yang diberikan. See you in our big day
+                !
               </p>
               <h2
                 className={`text-4xl tangerine-bold text-orange-700 mb-2 ${
                   inView10 ? "animate-letter-spacing" : "opacity-0"
                 }`}
               >
-                Nofridho & Nadya
+                Nadya & Nofridho
               </h2>
             </div>
           </div>

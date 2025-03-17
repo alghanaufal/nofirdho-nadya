@@ -15,14 +15,14 @@ const CountdownSection = ({ ref5, inView5, timeLeft, bgImage }) => {
         Wedding Day
       </h2>
       <p
-        className={`text-sm md:text-lg tangerine-regular text-yellow-800 mt-1 tracking-wide drop-shadow-md ${
+        className={`text-2xl md:text-4xl tangerine-bold text-yellow-800 mt-1 bg-white tracking-wide drop-shadow-md ${
           inView5 ? "animate-fade-in-up delay-100" : "opacity-0"
         }`}
       >
         03.05.2025
       </p>
 
-      <div className="grid grid-cols-4 gap-2 md:gap-4 mt-6 justify-center">
+      <div className="grid grid-cols-4 gap-2 md:gap-4 mt-6 mx-4 justify-center">
         <div
           className={`px-3 py-2 md:px-6 md:py-3 rounded-md text-center bg-white shadow-md ${
             inView5 ? "animate-fade-in-up delay-200" : "opacity-0"

@@ -24,11 +24,11 @@ const LandingSection = ({ guestName, handleScroll }) => {
             className="w-full h-full object-cover animate-pull-in block mx-auto"
           />
         </div>
-        <h2 className="text-sm text-yellow-700 m-2 animate-fade-in-up montecarlo-regular">
+        <h2 className="text-yellow-700 m-2 animate-fade-in-up charm-bold">
           THE WEDDING OF
         </h2>
-        <h1 className="text-3xl md:text-5xl charm-bold mb-4 animate-fade-in-scale animate-letter-spacing text-black">
-          NOFRIDHO <br />&<br /> NADYA
+        <h1 className="text-3xl md:text-5xl charm-bold mb-4 animate-fade-in-scale animate-letter-spacing text-yellow-900">
+          NADYA <br />&<br /> NOFRIDHO
         </h1>
         <p
           className="text-gray-800 mb-4 animate-fade-in-up charm-regular"
@@ -36,10 +36,12 @@ const LandingSection = ({ guestName, handleScroll }) => {
         >
           Kepada Yth.
           <br />
-          <span className="tangerine-bold text-yellow-900">{guestName}</span>
+          <span className="tangerine-bold text-yellow-900 text-2xl">
+            {guestName}
+          </span>
         </p>
         <p
-          className="text-sm text-gray-700 mb-6 mx-2 animate-fade-in-up hedvig-letters-serif-text"
+          className="text-xs text-yellow-900 mb-6 mx-2 animate-fade-in-up hedvig-letters-serif-text"
           style={{ animationDelay: "0.6s" }}
         >
           Dengan hormat, kami mengundang Anda untuk menghadiri pernikahan kami.

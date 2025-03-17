@@ -36,7 +36,7 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
             inView6 ? "animate-fade-in-up delay-400" : "opacity-0"
           } transition-opacity duration-500`}
         />
-        <h2 className="text-lg charm-bold text-yellow-800 mt-2 drop-shadow-lg">
+        <h2 className="text-xl charm-bold text-yellow-800 mt-2 drop-shadow-lg">
           AKAD NIKAH
         </h2>
         <p className="text-gray-700 mt-2 tangerine-regular text-xl font-medium">
@@ -45,7 +45,7 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
         <p className="text-gray-700 tangerine-regular text-lg">
           10.00 WIB - Selesai
         </p>
-        <p className="text-gray-600 text-sm font-serif">
+        <p className="text-gray-600 text-xs hedvig-letters-serif-text">
           Perumahan Pondok Timur Indah 1, jalan Harimau III no.81A RT/RW 009/017
           Kel.Jatimulya Kec.Tambun Selatan Bekasi Timur 17510
         </p>
@@ -89,7 +89,7 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
             inView6 ? "animate-fade-in-up delay-400" : "opacity-0"
           } transition-opacity duration-500`}
         />
-        <h2 className="text-lg charm-bold text-yellow-800 mt-2 drop-shadow-lg">
+        <h2 className="text-xl charm-bold text-yellow-800 mt-2 drop-shadow-lg">
           RESEPSI NIKAH
         </h2>
         <p className="text-gray-700 mt-2 tangerine-regular text-xl font-medium">
@@ -98,7 +98,7 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
         <p className="text-gray-700 tangerine-regular text-lg">
           12.30 WIB - Selesai
         </p>
-        <p className="text-gray-600 text-sm font-serif">
+        <p className="text-gray-600 text-xs hedvig-letters-serif-text">
           Perumahan Pondok Timur Indah 1, jalan Harimau III no.81A RT/RW 009/017
           Kel.Jatimulya Kec.Tambun Selatan Bekasi Timur 17510
         </p>

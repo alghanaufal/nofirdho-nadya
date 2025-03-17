@@ -42,11 +42,14 @@ const RSVPSection = ({
           Wishes
         </h2>
         <p
-          className={`text-gray-600 text-sm font-serif ${
+          className={`text-gray-600 text-xs text-xs hedvig-letters-serif-text ${
             inView7 ? "animate-fade-in-up delay-200" : "opacity-0"
           }`}
         >
-          Berikan ucapan harapan dan doa kepada kedua mempelai
+          Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga
+          apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa serta
+          harapan kepada kedua mempelai. Atas kehadirannya kamu ucapkan
+          Terimakasih
         </p>
 
         {/* Statistik Hadir/Tidak Hadir */}
@@ -141,7 +144,7 @@ const RSVPSection = ({
             inView7 ? "animate-fade-in-up delay-900" : "opacity-0"
           }`}
         >
-          <h3 className="font-semibold mb-2 text-gray-700 tangerine-bold">
+          <h3 className="text-3xl font-semibold mb-2 text-gray-700 tangerine-bold">
             Komentar:
           </h3>
           <div className="space-y-2 h-112 overflow-y-auto">
