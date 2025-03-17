@@ -49,7 +49,7 @@ const CoupleSection = ({
       />
       <h2
         ref={ref2}
-        className={`text-2xl md:text-4xl charm-bold text-yellow-900 mb-4 ${
+        className={`text-2xl md:text-4xl charm-bold text-yellow-900 drop-shadow-lg mb-4 ${
           inView2 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
@@ -57,7 +57,7 @@ const CoupleSection = ({
       </h2>
       <p
         ref={ref2}
-        className={`charm-regular text-yellow-800 mb-4 ${
+        className={`charm-regular text-gray-600 mb-4 ${
           inView2 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >

@@ -59,7 +59,7 @@ const ThaksSection = ({ ref10, inView10, bgImage }) => {
             <div className="p-2 pt-6">
               <p
                 ref={ref10}
-                className={`text-xs charm-regular text-gray-700 mb-4 ${
+                className={`text-sm charm-regular text-gray-600 mb-4 ${
                   inView10 ? "animate-fade-in-up" : "opacity-0"
                 }`}
               >
@@ -69,7 +69,7 @@ const ThaksSection = ({ ref10, inView10, bgImage }) => {
                 !
               </p>
               <h2
-                className={`text-4xl tangerine-bold text-orange-700 mb-2 ${
+                className={`text-4xl tangerine-bold text-yellow-900 mb-2 ${
                   inView10 ? "animate-letter-spacing" : "opacity-0"
                 }`}
               >

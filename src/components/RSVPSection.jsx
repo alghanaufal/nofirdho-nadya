@@ -35,14 +35,14 @@ const RSVPSection = ({
       >
         {/* Judul */}
         <h2
-          className={`text-2xl md:text-4xl charm-bold text-yellow-900 ${
+          className={`text-2xl md:text-4xl charm-bold text-yellow-900 drop-shadow-lg mb-2 ${
             inView7 ? "animate-fade-in-up delay-100" : "opacity-0"
           }`}
         >
           Wishes
         </h2>
         <p
-          className={`text-gray-600 text-xs text-xs hedvig-letters-serif-text ${
+          className={`text-gray-600 text-xs hedvig-letters-serif-text ${
             inView7 ? "animate-fade-in-up delay-200" : "opacity-0"
           }`}
         >

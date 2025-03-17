@@ -4,7 +4,7 @@ const GallerySection = ({ ref9, inView9, images, bgImage }) => {
   return (
     <div className="p-10" style={{ backgroundImage: `url(${bgImage})` }}>
       <h2
-        className={`text-2xl md:text-4xl font-serif font-bold drop-shadow-lg mb-6 charm-bold text-yellow-900 ${
+        className={`text-2xl md:text-4xl charm-bold text-yellow-900 drop-shadow-lg mb-6 ${
           inView9 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >

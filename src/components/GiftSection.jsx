@@ -29,14 +29,14 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
     >
       {/* Judul */}
       <h2
-        className={`text-2xl md:text-4xl font-bold drop-shadow-lg charm-bold text-yellow-900 ${
+        className={`text-2xl md:text-4xl charm-bold text-yellow-900 drop-shadow-lg mb-4 ${
           inView8 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
         Wedding Gift
       </h2>
       <p
-        className={`text-gray-600 text-sm text-xs hedvig-letters-serif-text mb-26 ${
+        className={`text-gray-600 text-xs hedvig-letters-serif-text mb-26 ${
           inView8 ? "animate-fade-in-up delay-200" : "opacity-0"
         }`}
       >

@@ -8,7 +8,7 @@ const CountdownSection = ({ ref5, inView5, timeLeft, bgImage }) => {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <h2
-        className={`text-2xl md:text-4xl charm-bold text-yellow-700 drop-shadow-lg ${
+        className={`text-2xl md:text-4xl charm-bold text-yellow-900 drop-shadow-lg ${
           inView5 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
