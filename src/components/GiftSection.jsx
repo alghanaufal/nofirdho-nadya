@@ -68,7 +68,7 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
           >
             <div className="grid grid-cols-2 gap-4 w-full px-5">
               <div className="flex flex-col items-center">
-                <p className="text-base sm:text-lg font-semibold text-gray-500 hedvig-letters-serif-text">
+                <p className="text-base sm:text-lg font-semibold text-gray-500 charm-bold">
                   BANK
                 </p>
                 <p className="px-10 text-[10px] sm:text-[12px] text-gray-700 hedvig-letters-serif-text">
@@ -85,7 +85,7 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <p className="text-base sm:text-lg font-semibold text-gray-500 hedvig-letters-serif-text">
+                <p className="text-base sm:text-lg font-semibold text-gray-500 charm-bold">
                   ALAMAT
                 </p>
                 <p
