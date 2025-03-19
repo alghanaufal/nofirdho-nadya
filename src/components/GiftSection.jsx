@@ -76,7 +76,7 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
                 </p>
                 <p
                   className="text-[10px] sm:text-[12px] text-gray-700 charm-regular"
-                  onClick={() => navigator.clipboard.writeText("1560022744793")}
+                  onClick={() => handleCopy("1560022744793")}
                 >
                   1560022744793
                 </p>
@@ -86,9 +86,9 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
                   ALAMAT
                 </p>
                 <p
-                  className="text-[10px] sm:text-[12px] text-gray-700 hedvig-letters-serif-text"
+                  className="text-[8px] sm:text-[12px] text-gray-700 hedvig-letters-serif-text"
                   onClick={() =>
-                    navigator.clipboard.writeText(
+                    handleCopy(
                       "Perumahan Pondok Timur Indah 1, jalan Harimau III no.81A RT/RW 009/017 Kel.Jatimulya Kec.Tambun Selatan Bekasi Timur 17510"
                     )
                   }
@@ -99,7 +99,7 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
               </div>
             </div>
             {copiedText && (
-              <div className="fixed bottom-5 bg-green-500 text-white px-4 py-2 rounded-md shadow-md">
+              <div className="fixed bottom-5 bg-gray-200 text-white px-4 py-2 rounded-md shadow-md">
                 copy
               </div>
             )}
