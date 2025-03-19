@@ -62,31 +62,37 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
         >
           {/* Card Content */}
           <div
-            className={`transition-all flex flex-col items-center py-5 justify-start duration-80 ${
+            className={`transition-all flex flex-col items-center py-2 justify-start duration-80 ${
               isOpen ? "-translate-y-22 duration-1000" : ""
             } bg-white w-full h-full absolute`}
           >
             <div className="grid grid-cols-2 gap-4 w-full px-5">
               <div className="flex flex-col items-center">
-                <p className="text-base sm:text-lg font-semibold text-gray-500 tangerine-bold">
+                <p className="text-base sm:text-lg font-semibold text-gray-500 hedvig-letters-serif-text">
                   BANK
                 </p>
                 <p className="px-10 text-[10px] sm:text-[12px] text-gray-700 hedvig-letters-serif-text">
                   Bank Mandiri
                 </p>
                 <p
-                  className="text-[10px] sm:text-[12px] text-gray-700 charm-regular"
+                  className="text-[10px] sm:text-[12px] text-gray-700 charm-regular p-2 rounded-lg"
+                  style={{
+                    backgroundColor: "rgba(181, 181, 181, 0.7)",
+                  }}
                   onClick={() => handleCopy("1560022744793")}
                 >
                   1560022744793
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <p className="text-base sm:text-lg font-semibold text-gray-500 tangerine-bold">
+                <p className="text-base sm:text-lg font-semibold text-gray-500 hedvig-letters-serif-text">
                   ALAMAT
                 </p>
                 <p
-                  className="text-[8px] sm:text-[12px] text-gray-700 hedvig-letters-serif-text"
+                  className="text-[8px] sm:text-[9px] text-gray-700 hedvig-letters-serif-text p-2 rounded-lg"
+                  style={{
+                    backgroundColor: "rgba(181, 181, 181, 0.7)",
+                  }}
                   onClick={() =>
                     handleCopy(
                       "Perumahan Pondok Timur Indah 1, jalan Harimau III no.81A RT/RW 009/017 Kel.Jatimulya Kec.Tambun Selatan Bekasi Timur 17510"

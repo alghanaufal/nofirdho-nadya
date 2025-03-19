@@ -98,7 +98,7 @@ const CoupleSection = ({
           </p>
           <section className="flex justify-center items-center">
             <button
-              href="/"
+              href="https://www.instagram.com/rnadyaaaaa"
               className={`group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-orange-400 text-white font-semibold ${
                 inView3 ? "animate-fade-in-up" : "opacity-0"
               }`}
@@ -153,11 +153,11 @@ const CoupleSection = ({
               inView4 ? "animate-fade-in-up" : "opacity-0"
             }`}
           >
-            Putra ke 2 dari Bapak Aung & Ibu Baiyar
+            Putra ke 2 dari Bapak Aung S.Pd & Ibu Baiyar S.Pd
           </p>
           <section className="flex justify-center items-center">
             <button
-              href="/"
+              href="https://www.instagram.com/nofridhoaulya"
               className={`group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-orange-400 text-white font-semibold ${
                 inView4 ? "animate-fade-in-up" : "opacity-0"
               }`}
