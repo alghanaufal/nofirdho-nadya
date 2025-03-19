@@ -72,7 +72,10 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
                   BANK
                 </p>
                 <p className="px-10 text-[10px] sm:text-[12px] text-gray-700 hedvig-letters-serif-text">
-                  Bank Mandiri
+                  Mandiri
+                </p>
+                <p className="px-10 text-[8px] sm:text-[12px] text-gray-700 hedvig-letters-serif-text">
+                  ROHADATUL NADYA
                 </p>
                 <p
                   className="text-[10px] sm:text-[12px] text-gray-700 charm-regular p-2 rounded-lg"

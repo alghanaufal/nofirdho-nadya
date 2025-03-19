@@ -39,10 +39,10 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
         <h2 className="text-xl charm-bold text-yellow-800 mt-2 drop-shadow-lg">
           AKAD NIKAH
         </h2>
-        <p className="text-gray-700 mt-2 tangerine-bold text-xl font-medium">
+        <p className="text-gray-700 mt-2 charm-bold text-lg font-medium">
           Sabtu, 03 Mei 2025
         </p>
-        <p className="text-gray-700 tangerine-bold text-lg">
+        <p className="text-gray-700 charm-bold text-base">
           10.00 WIB - Selesai
         </p>
         <p className="text-gray-600 text-xs hedvig-letters-serif-text">
@@ -92,10 +92,10 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
         <h2 className="text-xl charm-bold text-yellow-800 mt-2 drop-shadow-lg">
           RESEPSI NIKAH
         </h2>
-        <p className="text-gray-700 mt-2 tangerine-bold text-xl font-medium">
+        <p className="text-gray-700 mt-2 charm-bold text-lg font-medium">
           Sabtu, 03 Mei 2025
         </p>
-        <p className="text-gray-700 tangerine-bold text-lg">
+        <p className="text-gray-700 charm-bold text-base">
           12.30 WIB - Selesai
         </p>
         <p className="text-gray-600 text-xs hedvig-letters-serif-text">
