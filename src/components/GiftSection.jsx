@@ -71,11 +71,11 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
                 <p className="text-base sm:text-lg font-semibold text-gray-500 tangerine-bold">
                   BANK
                 </p>
-                <p className="px-10 text-[10px] sm:text-[12px] text-gray-700 hedvig-letters-serif-text select-text">
+                <p className="px-10 text-[10px] sm:text-[12px] text-gray-700 hedvig-letters-serif-text">
                   Bank Mandiri
                 </p>
                 <p
-                  className="text-[10px] sm:text-[12px] text-gray-700 charm-regular select-text"
+                  className="text-[10px] sm:text-[12px] text-gray-700 charm-regular"
                   onClick={() => navigator.clipboard.writeText("1560022744793")}
                 >
                   1560022744793
@@ -86,7 +86,7 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
                   ALAMAT
                 </p>
                 <p
-                  className="text-[10px] sm:text-[12px] text-gray-700 hedvig-letters-serif-text select-text"
+                  className="text-[10px] sm:text-[12px] text-gray-700 hedvig-letters-serif-text"
                   onClick={() =>
                     navigator.clipboard.writeText(
                       "Perumahan Pondok Timur Indah 1, jalan Harimau III no.81A RT/RW 009/017 Kel.Jatimulya Kec.Tambun Selatan Bekasi Timur 17510"
