@@ -3,6 +3,13 @@ import React, { useState, useEffect } from "react";
 const GiftSection = ({ ref8, inView8, bgImage }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showText, setShowText] = useState(false);
+  const [copiedText, setCopiedText] = useState("");
+
+  const handleCopy = (text) => {
+    navigator.clipboard.writeText(text);
+    setCopiedText(text);
+    setTimeout(() => setCopiedText(""), 2000);
+  };
 
   useEffect(() => {
     if (inView8) {
@@ -36,9 +43,12 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
         Wedding Gift
       </h2>
       <p
-        className={`text-gray-600 text-xs hedvig-letters-serif-text mb-26 ${
+        className={`text-gray-600 text-xs hedvig-letters-serif-text rounded-lg p-2 mb-26 ${
           inView8 ? "animate-fade-in-up delay-200" : "opacity-0"
         }`}
+        style={{
+          backgroundColor: "rgba(255, 255, 255, 0.7)",
+        }}
       >
         Bagi yang ingin memberikan tanda kasih dapat mengirimkan melalui fitur
         dibawah ini :
@@ -56,15 +66,43 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
               isOpen ? "-translate-y-22 duration-1000" : ""
             } bg-white w-full h-full absolute`}
           >
-            <p className="text-xl sm:text-2xl font-semibold text-gray-500 tangerine-bold">
-              ROHADATUL NADYA
-            </p>
-            <p className="px-10 text-[10px] sm:text-[12px] text-gray-700 hedvig-letters-serif-text">
-              Bank Mandiri
-            </p>
-            <p className="text-[10px] sm:text-[12px] text-gray-700 charm-regular">
-              1560022744793
-            </p>
+            <div className="grid grid-cols-2 gap-4 w-full px-5">
+              <div className="flex flex-col items-center">
+                <p className="text-base sm:text-lg font-semibold text-gray-500 tangerine-bold">
+                  BANK
+                </p>
+                <p className="px-10 text-[10px] sm:text-[12px] text-gray-700 hedvig-letters-serif-text select-text">
+                  Bank Mandiri
+                </p>
+                <p
+                  className="text-[10px] sm:text-[12px] text-gray-700 charm-regular select-text"
+                  onClick={() => navigator.clipboard.writeText("1560022744793")}
+                >
+                  1560022744793
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <p className="text-base sm:text-lg font-semibold text-gray-500 tangerine-bold">
+                  ALAMAT
+                </p>
+                <p
+                  className="text-[10px] sm:text-[12px] text-gray-700 hedvig-letters-serif-text select-text"
+                  onClick={() =>
+                    navigator.clipboard.writeText(
+                      "Perumahan Pondok Timur Indah 1, jalan Harimau III no.81A RT/RW 009/017 Kel.Jatimulya Kec.Tambun Selatan Bekasi Timur 17510"
+                    )
+                  }
+                >
+                  Perumahan Pondok Timur Indah 1, jalan Harimau III no.81A RT/RW
+                  009/017 Kel.Jatimulya Kec.Tambun Selatan Bekasi Timur 17510
+                </p>
+              </div>
+            </div>
+            {copiedText && (
+              <div className="fixed bottom-5 bg-green-500 text-white px-4 py-2 rounded-md shadow-md">
+                copy
+              </div>
+            )}
           </div>
 
           {showText && (

@@ -42,9 +42,12 @@ const RSVPSection = ({
           Wishes
         </h2>
         <p
-          className={`text-gray-600 text-xs hedvig-letters-serif-text ${
+          className={`text-gray-600 text-xs hedvig-letters-serif-text p-2 rounded-lg ${
             inView7 ? "animate-fade-in-up delay-200" : "opacity-0"
           }`}
+          style={{
+            backgroundColor: "rgba(255, 255, 255, 0.7)",
+          }}
         >
           Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga
           apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa serta

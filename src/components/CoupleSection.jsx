@@ -57,9 +57,12 @@ const CoupleSection = ({
       </h2>
       <p
         ref={ref2}
-        className={`charm-regular text-gray-600 mb-4 ${
+        className={`charm-regular text-gray-600 mb-4 rounded-lg ${
           inView2 ? "animate-fade-in-up" : "opacity-0"
         }`}
+        style={{
+          backgroundColor: "rgba(255, 255, 255, 0.7)",
+        }}
       >
         Dengan segala kerendahan hati, kami mengundang Bapak/Ibu/Saudara/i untuk
         menghadiri pernikahan kami.
@@ -72,7 +75,7 @@ const CoupleSection = ({
             }`}
           >
             <img
-              src="/6.jpeg"
+              src="/62.jpeg"
               alt="Nofridho & Nadya"
               className="w-full h-full object-cover"
             />
@@ -131,9 +134,9 @@ const CoupleSection = ({
             }`}
           >
             <img
-              src="/6.jpeg"
+              src="/61.jpeg"
               alt="Nofridho & Nadya"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-left"
             />
           </div>
         </div>
