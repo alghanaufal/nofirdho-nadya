@@ -132,16 +132,16 @@ export default function App() {
     return () => clearInterval(interval);
   }, []);
 
-  // useEffect(() => {
-  //   if (!isScrollAllowed) {
-  //     document.body.classList.add("no-scroll");
-  //   } else {
-  //     document.body.classList.remove("no-scroll");
-  //   }
-  //   return () => {
-  //     document.body.classList.remove("no-scroll");
-  //   };
-  // }, [isScrollAllowed]);
+  useEffect(() => {
+    if (!isScrollAllowed) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isScrollAllowed]);
 
   useEffect(() => {
     const countdown = setInterval(() => {
@@ -257,13 +257,13 @@ export default function App() {
             notAttending={notAttending}
             bgImage={bgfull2}
           />
-          <GiftSection ref8={ref8} inView8={inView8} bgImage={bgfull2} />
           <GallerySection
             ref9={ref9}
             inView9={inView9}
             images={imggallery}
             bgImage={bgfull2}
           />
+          <GiftSection ref8={ref8} inView8={inView8} bgImage={bgfull2} />
           <ThanksSection ref10={ref10} inView10={inView10} bgImage={bgfull2} />
         </div>
       </div>
