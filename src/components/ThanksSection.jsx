@@ -11,7 +11,7 @@ const ThaksSection = ({ ref10, inView10, bgImage }) => {
           className="rounded-3xl border-4 border-white shadow-lg flex flex-col items-center justify-center text-center animate-fade-in w-full max-w-md p-10"
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.5)",
-            boxShadow: "0 0 10px #FF8C00, 0 0 30px #FFD700",
+            boxShadow: "0 0 10px #D9C3E6, 0 0 30px #FADADD",
           }}
         >
           <img
@@ -59,7 +59,7 @@ const ThaksSection = ({ ref10, inView10, bgImage }) => {
             <div className="p-2 pt-6">
               <p
                 ref={ref10}
-                className={`text-sm charm-regular text-gray-600 mb-4 ${
+                className={`text-sm charm-regular text-[#3A3A3A] mb-4 ${
                   inView10 ? "animate-fade-in-up" : "opacity-0"
                 }`}
               >
@@ -69,7 +69,7 @@ const ThaksSection = ({ ref10, inView10, bgImage }) => {
                 !
               </p>
               <h2
-                className={`text-4xl tangerine-bold text-yellow-900 mb-2 ${
+                className={`text-4xl tangerine-bold text-[#444444] mb-2 ${
                   inView10 ? "animate-letter-spacing" : "opacity-0"
                 }`}
               >

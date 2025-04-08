@@ -3,12 +3,12 @@ import React from "react";
 const GallerySection = ({ ref9, inView9, images, bgImage }) => {
   return (
     <div
-      className="p-10"
-      style={{ backgroundImage: `url(${bgImage})` }}
+      className="p-10 bg-[#FDFBF7]"
+      // style={{ backgroundImage: `url(${bgImage})` }}
       ref={ref9}
     >
       <h2
-        className={`text-2xl md:text-4xl charm-bold text-yellow-900 drop-shadow-lg mb-6 ${
+        className={`text-2xl md:text-4xl charm-bold text-[#444444] drop-shadow-lg mb-6 ${
           inView9 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >

@@ -234,7 +234,7 @@ body.no-scroll {
   height: 100%;
   object-fit: cover;
   cursor: pointer;
-  filter: grayscale(80%);
+  /* filter: grayscale(80%); */
   transition: transform 0.35s linear, filter 0.35s linear; /* Animasi hover */
 }
 

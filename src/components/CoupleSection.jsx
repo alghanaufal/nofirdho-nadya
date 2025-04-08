@@ -11,8 +11,8 @@ const CoupleSection = ({
 }) => {
   return (
     <div
-      className="bg-orange-200 flex flex-col items-center justify-center text-center p-8 relative"
-      style={{ backgroundImage: `url(${bgImage})` }}
+      className="bg-[#FDFBF7] flex flex-col items-center justify-center text-center p-8 relative"
+      // style={{ backgroundImage: `url(${bgImage})` }}
     >
       <img
         src="/bunga4.png"
@@ -49,7 +49,7 @@ const CoupleSection = ({
       />
       <h2
         ref={ref2}
-        className={`text-2xl md:text-4xl charm-bold text-yellow-900 drop-shadow-lg mb-4 ${
+        className={`text-2xl md:text-4xl charm-bold text-[#444444] drop-shadow-lg mb-4 ${
           inView2 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
@@ -57,12 +57,12 @@ const CoupleSection = ({
       </h2>
       <p
         ref={ref2}
-        className={`charm-regular text-gray-600 mb-4 rounded-lg ${
+        className={`charm-regular text-[#444444] mb-4 rounded-lg ${
           inView2 ? "animate-fade-in-up" : "opacity-0"
         }`}
-        style={{
-          backgroundColor: "rgba(255, 255, 255, 0.7)",
-        }}
+        // style={{
+        //   backgroundColor: "rgba(255, 255, 255, 0.7)",
+        // }}
       >
         Dengan segala kerendahan hati, kami mengundang Bapak/Ibu/Saudara/i untuk
         menghadiri pernikahan kami.
@@ -83,14 +83,14 @@ const CoupleSection = ({
         </div>
         <div className="p-6">
           <h2
-            className={`text-4xl tangerine-bold text-yellow-900 mb-2 ${
+            className={`text-4xl tangerine-bold text-[#444444] mb-2 ${
               inView3 ? "animate-letter-spacing" : "opacity-0"
             }`}
           >
             Rohadatul Nadya Maurani, S.Si
           </h2>
           <p
-            className={`text-gray-700 charm-regular text-yellow-800 leading-tight mb-4 ${
+            className={`charm-regular text-[#3A3A3A] leading-tight mb-4 ${
               inView3 ? "animate-fade-in-up" : "opacity-0"
             }`}
           >
@@ -99,7 +99,7 @@ const CoupleSection = ({
           <section className="flex justify-center items-center">
             <a
               href="https://www.instagram.com/rnadyaaaaa"
-              className={`group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-orange-400 text-white font-semibold ${
+              className={`group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-[#D9C5B2] text-white font-semibold ${
                 inView3 ? "animate-fade-in-up" : "opacity-0"
               }`}
             >
@@ -120,7 +120,7 @@ const CoupleSection = ({
         </div>
       </div>
       <div
-        className={`text-6xl md:text-6xl tangerine-bold text-yellow-900 my-4 ${
+        className={`text-6xl md:text-6xl tangerine-bold text-[#444444] my-4 ${
           inView3 && inView4 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
@@ -142,14 +142,14 @@ const CoupleSection = ({
         </div>
         <div className="p-6">
           <h2
-            className={`text-4xl tangerine-bold text-yellow-900 mb-2 ${
+            className={`text-4xl tangerine-bold text-[#444444] mb-2 ${
               inView4 ? "animate-letter-spacing" : "opacity-0"
             }`}
           >
             Nofridho Aulya, S.sos
           </h2>
           <p
-            className={`charm-regular text-yellow-800 leading-tight mb-4 ${
+            className={`charm-regular text-[#3A3A3A] leading-tight mb-4 ${
               inView4 ? "animate-fade-in-up" : "opacity-0"
             }`}
           >
@@ -158,7 +158,7 @@ const CoupleSection = ({
           <section className="flex justify-center items-center">
             <a
               href="https://www.instagram.com/nofridhoaulya"
-              className={`group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-orange-400 text-white font-semibold ${
+              className={`group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-[#D9C5B2] text-white font-semibold ${
                 inView4 ? "animate-fade-in-up" : "opacity-0"
               }`}
             >

@@ -8,14 +8,14 @@ const LandingSection = ({ guestName, handleScroll }) => {
         className="rounded-3xl border-4 border-white shadow-lg flex flex-col items-center justify-center text-center animate-fade-in w-full max-w-md p-10"
         style={{
           backgroundColor: "rgba(255, 255, 255, 0.5)",
-          boxShadow: "0 0 10px #FF8C00, 0 0 30px #FFD700",
+          boxShadow: "0 0 10px #FADADD, 0 0 30px #D9C3E6",
         }}
       >
         <div
           className="w-42 md:w-58 max-w-md bg-white rounded-t-full shadow-lg relative"
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.5)",
-            boxShadow: "0 0 10px #FF8C00, 0 0 30px #FFD700",
+            boxShadow: "0 0 10px #FADADD, 0 0 30px #D9C3E6",
           }}
         >
           <img
@@ -24,10 +24,10 @@ const LandingSection = ({ guestName, handleScroll }) => {
             className="w-full h-full object-cover animate-pull-in block mx-auto"
           />
         </div>
-        <h2 className="text-yellow-700 m-2 animate-fade-in-up charm-bold">
+        <h2 className="text-[#444444] m-2 animate-fade-in-up charm-bold">
           THE WEDDING OF
         </h2>
-        <h1 className="text-3xl md:text-5xl charm-bold mb-4 animate-fade-in-scale animate-letter-spacing text-yellow-900">
+        <h1 className="text-3xl md:text-5xl charm-bold mb-4 animate-fade-in-scale animate-letter-spacing text-[#3A3A3A]">
           NADYA <br />&<br /> NOFRIDHO
         </h1>
         <p
@@ -36,19 +36,19 @@ const LandingSection = ({ guestName, handleScroll }) => {
         >
           Kepada Yth.
           <br />
-          <span className="tangerine-bold text-yellow-900 text-2xl">
+          <span className="tangerine-bold text-[#444444] text-2xl">
             {guestName}
           </span>
         </p>
         <p
-          className="text-xs text-yellow-900 mb-6 mx-2 animate-fade-in-up hedvig-letters-serif-text"
+          className="text-xs text-[#3A3A3A] mb-6 mx-2 animate-fade-in-up hedvig-letters-serif-text"
           style={{ animationDelay: "0.6s" }}
         >
           Dengan hormat, kami mengundang Anda untuk menghadiri pernikahan kami.
         </p>
         <button
           onClick={handleScroll}
-          className="bg-white text-yellow-900 px-6 py-2 rounded-full hover:bg-yellow-200 transition animate-fade-in-up z-[9999] charm-bold"
+          className="bg-white text-[#D9C5B2] px-6 py-2 rounded-full hover:bg-[#D9C5B2] hover:text-white transition animate-fade-in-up z-[9999] charm-bold"
           style={{ animationDelay: "0.8s" }}
         >
           Buka Undangan

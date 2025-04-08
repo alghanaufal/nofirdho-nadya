@@ -4,8 +4,8 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
   return (
     <div
       ref={ref6}
-      className="flex flex-col items-center p-12"
-      style={{ backgroundImage: `url(${bgImage})` }}
+      className="flex flex-col items-center p-12 bg-[#D9C5B2]"
+      // style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Bagian Akad Nikah */}
       <div
@@ -14,7 +14,7 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
         }`}
         style={{
           backgroundColor: "rgba(255, 255, 255, 0.85)",
-          boxShadow: "0 0 15px #FFD700, 0 0 40px #FF8C00",
+          boxShadow: "0 0 15px #FADADD, 0 0 40px #D9C3E6",
         }}
       >
         <img
@@ -36,13 +36,13 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
             inView6 ? "animate-fade-in-up delay-400" : "opacity-0"
           } transition-opacity duration-500`}
         />
-        <h2 className="text-xl charm-bold text-yellow-800 mt-2 drop-shadow-lg">
+        <h2 className="text-xl charm-bold text-[#444444] mt-2 drop-shadow-lg">
           AKAD NIKAH
         </h2>
-        <p className="text-gray-700 mt-2 charm-bold text-lg font-medium">
+        <p className="text-[#3A3A3A] mt-2 charm-bold text-lg font-medium">
           Sabtu, 03 Mei 2025
         </p>
-        <p className="text-gray-700 charm-bold text-base">
+        <p className="text-[#3A3A3A] charm-bold text-base">
           10.00 WIB - Selesai
         </p>
         <p className="text-gray-600 text-xs hedvig-letters-serif-text">
@@ -56,7 +56,7 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
             href="https://maps.app.goo.gl/nT3LnFo4xuWo3gMA8"
             target="_blank"
             rel="noopener noreferrer"
-            className={`bg-amber-500 text-gray-900 px-6 py-2 rounded-full hover:bg-gray-300 transition ${
+            className={`bg-[#D9C5B2] text-[#FDFBF7] px-6 py-2 rounded-full transition ${
               inView6 ? "animate-fade-in-up delay-100" : "opacity-0"
             }`}
           >
@@ -72,7 +72,7 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
         }`}
         style={{
           backgroundColor: "rgba(255, 255, 255, 0.85)",
-          boxShadow: "0 0 15px #FFD700, 0 0 40px #FF8C00",
+          boxShadow: "0 0 15px #FADADD, 0 0 40px #D9C3E6",
         }}
       >
         <img
@@ -89,13 +89,13 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
             inView6 ? "animate-fade-in-up delay-400" : "opacity-0"
           } transition-opacity duration-500`}
         />
-        <h2 className="text-xl charm-bold text-yellow-800 mt-2 drop-shadow-lg">
+        <h2 className="text-xl charm-bold text-[#444444] mt-2 drop-shadow-lg">
           RESEPSI NIKAH
         </h2>
-        <p className="text-gray-700 mt-2 charm-bold text-lg font-medium">
+        <p className="text-[#3A3A3A] mt-2 charm-bold text-lg font-medium">
           Sabtu, 03 Mei 2025
         </p>
-        <p className="text-gray-700 charm-bold text-base">
+        <p className="text-[#3A3A3A] charm-bold text-base">
           12.30 WIB - Selesai
         </p>
         <p className="text-gray-600 text-xs hedvig-letters-serif-text">
@@ -109,7 +109,7 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
             href="https://maps.app.goo.gl/nT3LnFo4xuWo3gMA8"
             target="_blank"
             rel="noopener noreferrer"
-            className={`bg-amber-500 text-gray-900 px-6 py-2 rounded-full hover:bg-gray-300 transition ${
+            className={`bg-[#D9C5B2] text-[#FDFBF7] px-6 py-2 rounded-full transition ${
               inView6 ? "animate-fade-in-up delay-300" : "opacity-0"
             }`}
           >
