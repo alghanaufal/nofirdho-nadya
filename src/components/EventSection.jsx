@@ -35,6 +35,9 @@ const EventSection = ({ ref6, inView6, bgImage }) => {
           AKAD NIKAH
         </h2>
         <p className="text-[#3A3A3A] mt-2 charm-bold text-lg font-medium">
+          Rumah Mempelai Wanita
+        </p>
+        <p className="text-[#3A3A3A] mt-2 charm-bold text-lg font-medium">
           Sabtu, 03 Mei 2025
         </p>
         <p className="text-[#3A3A3A] charm-bold text-base">
