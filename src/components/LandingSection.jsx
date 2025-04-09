@@ -8,14 +8,14 @@ const LandingSection = ({ guestName, handleScroll }) => {
         className="rounded-3xl border-4 border-white shadow-lg flex flex-col items-center justify-center text-center animate-fade-in w-full max-w-md p-10"
         style={{
           backgroundColor: "rgba(255, 255, 255, 0.5)",
-          boxShadow: "0 0 10px #FADADD, 0 0 30px #D9C3E6",
+          boxShadow: "0 0 30px #FADADD, 0 0 50px #D9C3E6",
         }}
       >
         <div
           className="w-42 md:w-58 max-w-md bg-white rounded-t-full shadow-lg relative"
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.5)",
-            boxShadow: "0 0 10px #FADADD, 0 0 30px #D9C3E6",
+            boxShadow: "0 0 30px #FADADD, 0 0 50px #D9C3E6",
           }}
         >
           <img
@@ -48,7 +48,7 @@ const LandingSection = ({ guestName, handleScroll }) => {
         </p>
         <button
           onClick={handleScroll}
-          className="bg-white text-[#D9C5B2] px-6 py-2 rounded-full hover:bg-[#D9C5B2] hover:text-white transition animate-fade-in-up z-[9999] charm-bold"
+          className="bg-[#D9C5B2] text-white hover:bg-white hover:text-[#D9C5B2] px-6 py-2 rounded-full  transition animate-fade-in-up z-[9999] charm-bold"
           style={{ animationDelay: "0.8s" }}
         >
           Buka Undangan

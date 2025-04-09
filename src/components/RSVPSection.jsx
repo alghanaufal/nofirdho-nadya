@@ -51,7 +51,7 @@ const RSVPSection = ({
         >
           Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga
           apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa serta
-          harapan kepada kedua mempelai. Atas kehadirannya kamu ucapkan
+          harapan kepada kedua mempelai. Atas kehadirannya kami ucapkan
           Terimakasih
         </p>
 
@@ -132,7 +132,7 @@ const RSVPSection = ({
           {/* Tombol Kirim */}
           <button
             type="submit"
-            className={`w-full bg-[#D9C5B2] py-2 rounded-md font-semibold text-white montecarlo-regular ${
+            className={`w-full bg-[#D9C5B2] py-1 rounded-md text-3xl font-semibold text-white montecarlo-regular ${
               inView7 ? "animate-fade-in-up delay-800" : "opacity-0"
             }`}
             onClick={createPost}
