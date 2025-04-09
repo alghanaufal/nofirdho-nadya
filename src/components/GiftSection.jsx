@@ -77,10 +77,10 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
             inView8 ? "animate-fade-in-up delay-100" : "opacity-0"
           }`}
         >
-          <h2 className="text-lg font-bold text-[#444444] mb-2 charm-bold">
+          <h2 className="text-4xl font-bold text-[#444444] mb-2 charm-bold">
             Rumah
           </h2>
-          <p className="mb-3 hedvig-letters-serif-text">
+          <p className="mb-3 text-xs hedvig-letters-serif-text">
             {" "}
             Perumahan Pondok Timur Indah 1, jalan Harimau III no.81A RT/RW
             009/017 Kel.Jatimulya Kec.Tambun Selatan Bekasi Timur 17510
