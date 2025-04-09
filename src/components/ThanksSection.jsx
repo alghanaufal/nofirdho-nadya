@@ -73,7 +73,9 @@ const ThaksSection = ({ ref10, inView10, bgImage }) => {
                   inView10 ? "animate-letter-spacing" : "opacity-0"
                 }`}
               >
-                Nadya & Nofridho
+                Nadya
+                <br /> & <br />
+                Nofridho
               </h2>
             </div>
           </div>
