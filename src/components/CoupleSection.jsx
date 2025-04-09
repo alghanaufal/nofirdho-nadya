@@ -155,7 +155,7 @@ const CoupleSection = ({
           >
             Putra ke 2 dari Bapak Aung S.Pd & Ibu Baiyar S.Pd
           </p>
-          <section className="flex justify-center items-center">
+          <section className="flex justify-center items-center mb-6">
             <a
               href="https://www.instagram.com/nofridhoaulya"
               className={`group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-[#D9C5B2] text-white font-semibold ${

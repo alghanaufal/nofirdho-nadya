@@ -34,6 +34,8 @@ const imggallery = [
   "/12.JPG",
   "/16.JPG",
   "/15.JPG",
+  "/23.JPG",
+  "/22.JPG",
   "/3.jpeg",
   "/7.JPG",
   "/4.jpeg",

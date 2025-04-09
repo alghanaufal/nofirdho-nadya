@@ -93,7 +93,7 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
               )
             }
           >
-            Salin Rekening
+            Salin Alamat
           </button>
         </div>
       </div>
