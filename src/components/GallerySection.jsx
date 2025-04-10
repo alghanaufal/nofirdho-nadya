@@ -1,15 +1,53 @@
 import React, { useState } from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { FaRegImages, FaBookmark, FaUserTag } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Thumbs } from "swiper/modules";
-import "react-tabs/style/react-tabs.css";
 import "swiper/css";
 import "swiper/css/thumbs";
 
 const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
-  const [tabIndex, setTabIndex] = useState(0);
+  const [activeTab, setActiveTab] = useState("posts");
   const [thumbsSwiper1, setThumbsSwiper1] = useState(null);
   const [thumbsSwiper2, setThumbsSwiper2] = useState(null);
+
+  const getGalleryImages = () => {
+    switch (activeTab) {
+      case "posts":
+        return images1;
+      case "saved":
+        return images2;
+      case "tagged":
+        return images1.concat(images2); // atau konten lainnya
+      default:
+        return [];
+    }
+  };
+
+  const getThumbSetter = () => {
+    switch (activeTab) {
+      case "posts":
+        return setThumbsSwiper1;
+      case "saved":
+        return setThumbsSwiper2;
+      default:
+        return () => {};
+    }
+  };
+
+  const getThumbsSwiper = () => {
+    switch (activeTab) {
+      case "posts":
+        return thumbsSwiper1;
+      case "saved":
+        return thumbsSwiper2;
+      default:
+        return null;
+    }
+  };
+
+  const galleryImages = getGalleryImages();
+  const currentThumbsSwiper = getThumbsSwiper();
+  const currentThumbSetter = getThumbSetter();
 
   return (
     <div className="p-10 bg-[#FDFBF7]" ref={ref9}>
@@ -21,100 +59,82 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
         Tabbed Gallery
       </h2>
 
-      <Tabs selectedIndex={tabIndex} onSelect={setTabIndex}>
-        <TabList className="flex gap-4 justify-center mb-6">
-          <Tab className="cursor-pointer px-4 py-2 rounded-md hover:bg-gray-200 focus:outline-none">
-            Gallery 1
-          </Tab>
-          <Tab className="cursor-pointer px-4 py-2 rounded-md hover:bg-gray-200 focus:outline-none">
-            Gallery 2
-          </Tab>
-        </TabList>
+      {/* Tab Buttons */}
+      <div className="flex justify-center border-t border-gray-700 pt-4 mb-6">
+        <button
+          className={`flex items-center gap-1 px-4 py-2 text-sm font-semibold uppercase tracking-widest ${
+            activeTab === "posts"
+              ? "border-t-2 border-black text-black"
+              : "opacity-50"
+          }`}
+          onClick={() => setActiveTab("posts")}
+        >
+          <FaRegImages />
+          Posts
+        </button>
+        <button
+          className={`flex items-center gap-1 px-4 py-2 text-sm font-semibold uppercase tracking-widest ${
+            activeTab === "saved"
+              ? "border-t-2 border-black text-black"
+              : "opacity-50"
+          }`}
+          onClick={() => setActiveTab("saved")}
+        >
+          <FaBookmark />
+          Saved
+        </button>
+        <button
+          className={`flex items-center gap-1 px-4 py-2 text-sm font-semibold uppercase tracking-widest ${
+            activeTab === "tagged"
+              ? "border-t-2 border-black text-black"
+              : "opacity-50"
+          }`}
+          onClick={() => setActiveTab("tagged")}
+        >
+          <FaUserTag />
+          Tagged
+        </button>
+      </div>
 
-        {/* ========== Gallery 1 ========== */}
-        <TabPanel forceRender>
-          <div className="w-full max-w-4xl mx-auto">
-            <Swiper
-              key={`gallery1-${!!thumbsSwiper1}`}
-              spaceBetween={10}
-              thumbs={{ swiper: thumbsSwiper1 }}
-              modules={[Thumbs]}
-              className="rounded-xl overflow-hidden mb-4"
-            >
-              {images1.map((src, idx) => (
-                <SwiperSlide key={idx}>
-                  <img
-                    src={src}
-                    alt={`Slide 1-${idx}`}
-                    className="w-full object-cover rounded-lg h-[400px]"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+      {/* Gallery Content */}
+      <div className="w-full max-w-4xl mx-auto">
+        <Swiper
+          key={`gallery-${activeTab}-${!!currentThumbsSwiper}`}
+          spaceBetween={10}
+          thumbs={{ swiper: currentThumbsSwiper }}
+          modules={[Thumbs]}
+          className="rounded-xl overflow-hidden mb-4"
+        >
+          {galleryImages.map((src, idx) => (
+            <SwiperSlide key={idx}>
+              <img
+                src={src}
+                alt={`Slide-${idx}`}
+                className="w-full object-cover rounded-lg h-[400px]"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-            <Swiper
-              onSwiper={setThumbsSwiper1}
-              spaceBetween={10}
-              slidesPerView={4}
-              watchSlidesProgress
-              modules={[Thumbs]}
-              className="rounded-md"
-            >
-              {images1.map((src, idx) => (
-                <SwiperSlide key={idx}>
-                  <img
-                    src={src}
-                    alt={`Thumb 1-${idx}`}
-                    className="w-full h-24 object-cover cursor-pointer rounded-md"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </TabPanel>
-
-        {/* ========== Gallery 2 ========== */}
-        <TabPanel forceRender>
-          <div className="w-full max-w-4xl mx-auto">
-            <Swiper
-              key={`gallery2-${!!thumbsSwiper2}`}
-              spaceBetween={10}
-              thumbs={{ swiper: thumbsSwiper2 }}
-              modules={[Thumbs]}
-              className="rounded-xl overflow-hidden mb-4"
-            >
-              {images2.map((src, idx) => (
-                <SwiperSlide key={idx}>
-                  <img
-                    src={src}
-                    alt={`Slide 2-${idx}`}
-                    className="w-full object-cover rounded-lg h-[400px]"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-            <Swiper
-              onSwiper={setThumbsSwiper2}
-              spaceBetween={10}
-              slidesPerView={4}
-              watchSlidesProgress
-              modules={[Thumbs]}
-              className="rounded-md"
-            >
-              {images2.map((src, idx) => (
-                <SwiperSlide key={idx}>
-                  <img
-                    src={src}
-                    alt={`Thumb 2-${idx}`}
-                    className="w-full h-24 object-cover cursor-pointer rounded-md"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </TabPanel>
-      </Tabs>
+        <Swiper
+          onSwiper={currentThumbSetter}
+          spaceBetween={10}
+          slidesPerView={4}
+          watchSlidesProgress
+          modules={[Thumbs]}
+          className="rounded-md"
+        >
+          {galleryImages.map((src, idx) => (
+            <SwiperSlide key={idx}>
+              <img
+                src={src}
+                alt={`Thumb-${idx}`}
+                className="w-full h-24 object-cover cursor-pointer rounded-md"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };
