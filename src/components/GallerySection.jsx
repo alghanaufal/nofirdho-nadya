@@ -70,7 +70,6 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
           onClick={() => setActiveTab("posts")}
         >
           <FaRegImages />
-          Posts
         </button>
         <button
           className={`flex items-center gap-1 px-4 py-2 text-sm font-semibold uppercase tracking-widest ${
@@ -80,8 +79,7 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
           }`}
           onClick={() => setActiveTab("saved")}
         >
-          <FaBookmark />
-          Saved
+          <FaRegImages />
         </button>
         <button
           className={`flex items-center gap-1 px-4 py-2 text-sm font-semibold uppercase tracking-widest ${
@@ -91,8 +89,7 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
           }`}
           onClick={() => setActiveTab("tagged")}
         >
-          <FaUserTag />
-          Tagged
+          <FaBookmark />
         </button>
       </div>
 
