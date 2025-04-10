@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
-import { FaRegImages, FaBookmark, FaUserTag } from "react-icons/fa";
+import { FaCameraRetro } from "react-icons/fa";
+import { RiTreeFill } from "react-icons/ri";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Thumbs } from "swiper/modules";
 import "swiper/css";
@@ -50,36 +51,48 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
   const currentThumbSetter = getThumbSetter();
 
   return (
-    <div className="p-10 bg-[#FDFBF7]" ref={ref9}>
+    <div
+      className={`p-10 transition-colors duration-800 ease-in-out ${
+        activeTab === "saved" ? "bg-[#B6CFC4]" : "bg-[#FDFBF7]"
+      }`}
+      ref={ref9}
+    >
       <h2
         className={`text-2xl md:text-4xl charm-bold text-[#444444] drop-shadow-lg mb-6 text-center ${
           inView9 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
-        Gallery
+        Our Gallery
       </h2>
+      <p
+        className={`text-base md:text-4xl hedvig-letters-serif-text text-[#444444] drop-shadow-lg text-center ${
+          inView9 ? "animate-fade-in-up" : "opacity-0"
+        }`}
+      >
+        Choose a Theme
+      </p>
 
       {/* Tab Buttons */}
-      <div className="flex justify-center border-t border-gray-700 pt-4 mb-6">
+      <div className="flex justify-center border-t border-[#444444] pt-4 mb-4">
         <button
-          className={`flex items-center gap-1 px-4 py-2 text-sm font-semibold uppercase tracking-widest ${
+          className={`flex items-center gap-1 px-16 py-4 text-sm font-semibold uppercase tracking-widest transition-all duration-400 ease-in-out ${
             activeTab === "posts"
-              ? "border-t-2 border-black text-black"
+              ? "border-t-2 border-[#444444] text-[#444444]"
               : "opacity-50"
           }`}
           onClick={() => setActiveTab("posts")}
         >
-          <FaRegImages />
+          <FaCameraRetro />
         </button>
         <button
-          className={`flex items-center gap-1 px-4 py-2 text-sm font-semibold uppercase tracking-widest ${
+          className={`flex items-center gap-1 px-16 py-4 text-sm font-semibold uppercase tracking-widest transition-all duration-400 ease-in-out ${
             activeTab === "saved"
-              ? "border-t-2 border-black text-black"
+              ? "border-t-2 border-[#444444] text-[#444444]"
               : "opacity-50"
           }`}
           onClick={() => setActiveTab("saved")}
         >
-          <FaRegImages />
+          <RiTreeFill />
         </button>
       </div>
 
@@ -122,7 +135,7 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
                 src={src}
                 alt={`Thumb-${idx}`}
                 className={`w-full h-24 object-cover cursor-pointer rounded-md ${
-                  idx === activeIndex ? "ring-2 ring-black" : ""
+                  idx === activeIndex ? "ring-2 ring-[#D9C5B2]" : ""
                 }`}
                 onClick={() => {
                   setActiveIndex(idx);
