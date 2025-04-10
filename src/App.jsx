@@ -124,6 +124,9 @@ export default function App() {
   const { ref: ref8, inView: inView8 } = useInView({ threshold: 0.1 });
   const { ref: ref9, inView: inView9 } = useInView({ threshold: 0.1 });
   const { ref: ref10, inView: inView10 } = useInView({ threshold: 0.1 });
+  const { ref: ref11, inView: inView11 } = useInView({ threshold: 0.1 });
+  const { ref: ref12, inView: inView12 } = useInView({ threshold: 0.1 });
+  const { ref: ref13, inView: inView13 } = useInView({ threshold: 0.1 });
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -249,10 +252,18 @@ export default function App() {
             timeLeft={timeLeft}
             bgImage={bgfull2}
           />
-          <EventSection ref6={ref6} inView6={inView6} bgImage={bgfull} />
-          <RSVPSection
+          <EventSection
+            ref6={ref6}
             ref7={ref7}
+            ref8={ref8}
+            inView6={inView6}
             inView7={inView7}
+            inView8={inView8}
+            bgImage={bgfull}
+          />
+          <RSVPSection
+            ref9={ref9}
+            inView9={inView9}
             posts={posts}
             post={post}
             setPost={setPost}
@@ -262,14 +273,14 @@ export default function App() {
             bgImage={bgfull2}
           />
           <GallerySection
-            ref9={ref9}
-            inView9={inView9}
+            ref10={ref10}
+            inView10={inView10}
             images1={imggallery1}
             images2={imggallery2}
             bgImage={bgfull2}
           />
-          <GiftSection ref8={ref8} inView8={inView8} bgImage={bgfull2} />
-          <ThanksSection ref10={ref10} inView10={inView10} bgImage={bgfull2} />
+          <GiftSection ref11={ref11} inView11={inView11} bgImage={bgfull2} />
+          <ThanksSection ref12={ref12} inView12={inView12} bgImage={bgfull2} />
         </div>
       </div>
     </div>

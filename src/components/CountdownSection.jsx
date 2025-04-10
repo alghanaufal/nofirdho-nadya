@@ -9,21 +9,21 @@ const CountdownSection = ({ ref5, inView5, timeLeft, bgImage }) => {
     >
       <h2
         className={`text-2xl md:text-4xl charm-bold text-[#444444] drop-shadow-lg ${
-          inView5 ? "animate-fade-in-up" : "opacity-0"
+          inView5 ? "animate-letter-spacing" : "opacity-0"
         }`}
       >
         Wedding Day
       </h2>
       <p
         className={`text-6xl md:text-4xl tangerine-bold text-[#3A3A3A] mt-3 tracking-wide drop-shadow-md mx-4 rounded-lg ${
-          inView5 ? "animate-fade-in-up delay-100" : "opacity-0"
+          inView5 ? "animate-letter-spacing delay-100" : "opacity-0"
         }`}
       >
         Sabtu
       </p>
       <p
         className={`text-3xl md:text-4xl tangerine-bold text-[#3A3A3A] mt-1 tracking-wide drop-shadow-md mx-4 rounded-lg ${
-          inView5 ? "animate-fade-in-up delay-100" : "opacity-0"
+          inView5 ? "animate-fade-in-scale delay-100" : "opacity-0"
         }`}
         style={{
           backgroundColor: "rgba(255, 255, 255, 0.7)",

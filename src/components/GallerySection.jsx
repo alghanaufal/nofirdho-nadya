@@ -6,7 +6,7 @@ import { Thumbs } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/thumbs";
 
-const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
+const GallerySection = ({ ref10, inView10, images1, images2, bgImage }) => {
   const [activeTab, setActiveTab] = useState("posts");
   const [thumbsSwiper1, setThumbsSwiper1] = useState(null);
   const [thumbsSwiper2, setThumbsSwiper2] = useState(null);
@@ -55,18 +55,18 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
       className={`p-10 transition-colors duration-800 ease-in-out ${
         activeTab === "saved" ? "bg-[#B6CFC4]" : "bg-[#FDFBF7]"
       }`}
-      ref={ref9}
+      ref={ref10}
     >
       <h2
         className={`text-2xl md:text-4xl charm-bold text-[#444444] drop-shadow-lg mb-6 text-center ${
-          inView9 ? "animate-fade-in-up" : "opacity-0"
+          inView10 ? "animate-letter-spacing" : "opacity-0"
         }`}
       >
         Our Gallery
       </h2>
       <p
         className={`text-base md:text-4xl hedvig-letters-serif-text text-[#444444] drop-shadow-lg text-center ${
-          inView9 ? "animate-fade-in-up" : "opacity-0"
+          inView10 ? "animate-letter-spacing" : "opacity-0"
         }`}
       >
         Choose a Theme
@@ -75,7 +75,7 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
       {/* Tab Buttons */}
       <div
         className={`flex justify-center border-t border-[#444444] pt-4 mb-4 ${
-          inView9 ? "animate-fade-in-up" : "opacity-0"
+          inView10 ? "animate-fade-in-scale" : "opacity-0"
         }`}
       >
         <button
@@ -83,7 +83,7 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
             activeTab === "posts"
               ? "border-t-2 border-[#444444] text-[#444444]"
               : "opacity-50"
-          } ${inView9 ? "animate-fade-in-up" : "opacity-0"}`}
+          } ${inView10 ? "animate-fade-in-up" : "opacity-0"}`}
           onClick={() => setActiveTab("posts")}
         >
           <FaCameraRetro />
@@ -93,7 +93,7 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
             activeTab === "saved"
               ? "border-t-2 border-[#444444] text-[#444444]"
               : "opacity-50"
-          } ${inView9 ? "animate-fade-in-up" : "opacity-0"}`}
+          } ${inView10 ? "animate-fade-in-up" : "opacity-0"}`}
           onClick={() => setActiveTab("saved")}
         >
           <RiTreeFill />
@@ -103,7 +103,7 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
       {/* Gallery Content */}
       <div
         className={`w-full max-w-4xl mx-auto transition-all duration-500 ease-in-out ${
-          inView9 ? "animate-fade-in-scale" : "opacity-0"
+          inView10 ? "animate-fade-in-scale" : "opacity-0"
         }`}
       >
         <Swiper
@@ -161,7 +161,7 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
 export default GallerySection;
 
 /* <div
-  className={`gallery ${inView9 ? "animate-fade-in-up" : ""}`} // Tambahkan class animasi saat inView true
+  className={`gallery ${inView10 ? "animate-fade-in-up" : ""}`} // Tambahkan class animasi saat inView true
 >
   {images1.map((img, index) => (
     <div key={index} className="gallery-item">

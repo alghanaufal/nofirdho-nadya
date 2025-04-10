@@ -1,6 +1,6 @@
 import React from "react";
 
-const ThaksSection = ({ ref10, inView10, bgImage }) => {
+const ThaksSection = ({ ref12, inView12, bgImage }) => {
   return (
     <>
       <div
@@ -18,35 +18,35 @@ const ThaksSection = ({ ref10, inView10, bgImage }) => {
             src="/bunga4.png"
             alt="Bunga"
             className={`absolute top-12 -left-6 w-24 h-24 transform rotate-32 scale-x-[-1] animate-sway ${
-              inView10 ? "opacity-100" : "opacity-0"
+              inView12 ? "opacity-100" : "opacity-0"
             } transition-opacity duration-500`}
           />
           <img
             src="/bunga4.png"
             alt="Bunga"
             className={`absolute top-12 -right-6 w-24 h-24 transform -rotate-32 animate-sway ${
-              inView10 ? "opacity-100" : "opacity-0"
+              inView12 ? "opacity-100" : "opacity-0"
             } transition-opacity duration-500`}
           />
           <img
             src="/bunga7.png"
             alt="Bunga"
             className={`absolute -right-2 w-24 h-24 transform rotate-12 animate-sway ${
-              inView10 ? "opacity-100" : "opacity-0"
+              inView12 ? "opacity-100" : "opacity-0"
             } transition-opacity duration-500`}
           />
           <img
             src="/bunga7.png"
             alt="Bunga"
             className={`absolute -left-2 w-24 h-24 transform -rotate-12 scale-x-[-1] animate-sway ${
-              inView10 ? "opacity-100" : "opacity-0"
+              inView12 ? "opacity-100" : "opacity-0"
             } transition-opacity duration-500`}
           />
-          <div ref={ref10}>
+          <div ref={ref12}>
             <div className="flex justify-center items-center">
               <div
                 className={`w-40 h-60 border border-white rounded-full overflow-hidden relative ${
-                  inView10 ? "animate-zoom-in" : "opacity-0"
+                  inView12 ? "animate-zoom-in" : "opacity-0"
                 }`}
               >
                 <img
@@ -58,9 +58,9 @@ const ThaksSection = ({ ref10, inView10, bgImage }) => {
             </div>
             <div className="p-2 pt-6">
               <p
-                ref={ref10}
+                ref={ref12}
                 className={`text-sm charm-regular text-[#3A3A3A] mb-4 ${
-                  inView10 ? "animate-fade-in-up" : "opacity-0"
+                  inView12 ? "animate-fade-in-up" : "opacity-0"
                 }`}
               >
                 Menjadi sebuah kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i
@@ -70,7 +70,7 @@ const ThaksSection = ({ ref10, inView10, bgImage }) => {
               </p>
               <h2
                 className={`text-4xl tangerine-bold text-[#444444] mb-2 ${
-                  inView10 ? "animate-letter-spacing" : "opacity-0"
+                  inView12 ? "animate-letter-spacing" : "opacity-0"
                 }`}
               >
                 Nadya

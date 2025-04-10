@@ -50,7 +50,7 @@ const CoupleSection = ({
       <h2
         ref={ref2}
         className={`text-2xl md:text-4xl charm-bold text-[#444444] drop-shadow-lg mb-4 ${
-          inView2 ? "animate-fade-in-up" : "opacity-0"
+          inView2 ? "animate-letter-spacing" : "opacity-0"
         }`}
       >
         Assalamu'alaikum Wr. Wb.
@@ -58,11 +58,11 @@ const CoupleSection = ({
       <p
         ref={ref2}
         className={`charm-regular text-[#444444] mb-4 rounded-lg ${
-          inView2 ? "animate-fade-in-up" : "opacity-0"
+          inView2 ? "animate-fade-in-scale" : "opacity-0"
         }`}
-        // style={{
-        //   backgroundColor: "rgba(255, 255, 255, 0.7)",
-        // }}
+        style={{
+          backgroundColor: "rgba(255, 255, 255, 0.7)",
+        }}
       >
         Dengan segala kerendahan hati, kami mengundang Bapak/Ibu/Saudara/i untuk
         menghadiri pernikahan kami.
@@ -91,7 +91,7 @@ const CoupleSection = ({
           </h2>
           <p
             className={`charm-regular text-[#3A3A3A] leading-tight mb-4 ${
-              inView3 ? "animate-fade-in-up" : "opacity-0"
+              inView3 ? "animate-letter-spacing" : "opacity-0"
             }`}
           >
             Putri ke 1 dari Bapak Rasul Hamidi & Ibu Jasmaniar
@@ -121,7 +121,7 @@ const CoupleSection = ({
       </div>
       <div
         className={`text-6xl md:text-6xl tangerine-bold text-[#444444] my-4 ${
-          inView3 && inView4 ? "animate-fade-in-up" : "opacity-0"
+          inView3 && inView4 ? "animate-zoom-in" : "opacity-0"
         }`}
       >
         &
@@ -150,7 +150,7 @@ const CoupleSection = ({
           </h2>
           <p
             className={`charm-regular text-[#3A3A3A] leading-tight mb-4 ${
-              inView4 ? "animate-fade-in-up" : "opacity-0"
+              inView4 ? "animate-letter-spacing" : "opacity-0"
             }`}
           >
             Putra ke 2 dari Bapak Aung S.Pd & Ibu Baiyar S.Pd

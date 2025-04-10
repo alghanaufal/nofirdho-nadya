@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import mandiriLogo from "undangan/public/mandiri.png";
 import bsiLogo from "undangan/public/bsi.png";
 
-const GiftSection = ({ ref8, inView8, bgImage }) => {
+const GiftSection = ({ ref11, inView11, bgImage }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const copyToClipboard = (text) => {
@@ -16,7 +16,7 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
 
   return (
     <div
-      ref={ref8}
+      ref={ref11}
       className="bg-orange-200 flex flex-col items-center justify-center text-center p-8 relative"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
@@ -29,14 +29,14 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
       >
         <h1
           className={`text-2xl md:text-4xl charm-bold text-[#444444] drop-shadow-lg mb-2 ${
-            inView8 ? "animate-fade-in-up delay-100" : "opacity-0"
+            inView11 ? "animate-letter-spacing delay-100" : "opacity-0"
           }`}
         >
           Wedding Gift
         </h1>
         <p
           className={`text-[#3A3A3A] text-xs hedvig-letters-serif-text p-2 rounded-lg ${
-            inView8 ? "animate-fade-in-up delay-200" : "opacity-0"
+            inView11 ? "animate-fade-in-scale delay-200" : "opacity-0"
           }`}
         >
           Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan tanda
@@ -44,7 +44,7 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
         </p>
         <div
           className={`mb-6 p-4 rounded-md ${
-            inView8 ? "animate-fade-in-up delay-100" : "opacity-0"
+            inView11 ? "animate-fade-in-up delay-100" : "opacity-0"
           }`}
         >
           <img src={mandiriLogo} alt="Mandiri Logo" className="h-10 mb-2" />
@@ -59,7 +59,7 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
         </div>
         <div
           className={`mb-6 p-4 rounded-md ${
-            inView8 ? "animate-fade-in-up delay-100" : "opacity-0"
+            inView11 ? "animate-fade-in-up delay-100" : "opacity-0"
           }`}
         >
           <img src={bsiLogo} alt="BSI Logo" className="h-10 mb-2" />
@@ -74,7 +74,7 @@ const GiftSection = ({ ref8, inView8, bgImage }) => {
         </div>
         <div
           className={`mb-6 p-4 rounded-md ${
-            inView8 ? "animate-fade-in-up delay-100" : "opacity-0"
+            inView11 ? "animate-fade-in-up delay-100" : "opacity-0"
           }`}
         >
           <h2 className="text-4xl font-bold text-[#444444] mb-2 charm-bold">

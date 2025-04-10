@@ -32,7 +32,9 @@ const InvitationSection = ({ ref1, inView1, bgImage }) => {
           <img
             src="/1.jpeg"
             alt="Mountain"
-            className="w-full h-68 md:h-74 object-cover"
+            className={`w-full h-68 md:h-74 object-cover ${
+              inView1 ? "animate-fade-in-up" : ""
+            }`}
           />
           <div className="p-6">
             <p

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 const RSVPSection = ({
-  ref7,
-  inView7,
+  ref9,
+  inView9,
   posts,
   post,
   setPost,
@@ -24,26 +24,26 @@ const RSVPSection = ({
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
     <div
-      ref={ref7} // Gunakan ref7 untuk memantau container
+      ref={ref9} // Gunakan ref9 untuk memantau container
       className="flex justify-center items-center min-h-screen"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div
         className={`p-6 rounded-lg shadow-lg max-w-md w-full text-center border border-gray-300 ${
-          inView7 ? "animate-fade-in-up" : "opacity-0"
+          inView9 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
         {/* Judul */}
         <h2
           className={`text-2xl md:text-4xl charm-bold text-[#444444] drop-shadow-lg mb-2 ${
-            inView7 ? "animate-fade-in-up delay-100" : "opacity-0"
+            inView9 ? "animate-letter-spacing delay-100" : "opacity-0"
           }`}
         >
           Wishes
         </h2>
         <p
           className={`text-[#3A3A3A] text-xs hedvig-letters-serif-text p-2 rounded-lg ${
-            inView7 ? "animate-fade-in-up delay-200" : "opacity-0"
+            inView9 ? "animate-fade-in-scale delay-200" : "opacity-0"
           }`}
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.7)",
@@ -58,7 +58,7 @@ const RSVPSection = ({
         {/* Statistik Hadir/Tidak Hadir */}
         <div
           className={`flex justify-center gap-4 my-4 ${
-            inView7 ? "animate-fade-in-up delay-300" : "opacity-0"
+            inView9 ? "animate-fade-in-scale delay-300" : "opacity-0"
           }`}
         >
           <div className="bg-[#B6CFC4] px-4 py-2 rounded text-[#2F4F4F] font-semibold charm-regular">
@@ -77,7 +77,7 @@ const RSVPSection = ({
             value={name}
             onChange={(e) => setPost({ ...post, name: e.target.value })}
             className={`w-full px-3 py-2 border rounded-md bg-[#FDFBF7] charm-bold ${
-              inView7 ? "animate-fade-in-up delay-400" : "opacity-0"
+              inView9 ? "animate-fade-in-up delay-400" : "opacity-0"
             }`}
           />
           <input
@@ -86,13 +86,13 @@ const RSVPSection = ({
             value={address}
             onChange={(e) => setPost({ ...post, address: e.target.value })}
             className={`w-full px-3 py-2 border rounded-md bg-[#FDFBF7] charm-bold ${
-              inView7 ? "animate-fade-in-up delay-600" : "opacity-0"
+              inView9 ? "animate-fade-in-up delay-600" : "opacity-0"
             }`}
           />
           {/* Tombol Hadir/Tidak Hadir */}
           <div
             className={`flex gap-2 ${
-              inView7 ? "animate-fade-in-up delay-700" : "opacity-0"
+              inView9 ? "animate-fade-in-up delay-700" : "opacity-0"
             }`}
           >
             <button
@@ -125,7 +125,7 @@ const RSVPSection = ({
               value={quantity}
               onChange={(e) => setPost({ ...post, quantity: e.target.value })}
               className={`w-full px-3 py-2 border rounded-md bg-[#FDFBF7] hedvig-letters-serif-text ${
-                inView7 ? "animate-fade-in-up delay-500" : "opacity-0"
+                inView9 ? "animate-fade-in-scale delay-500" : "opacity-0"
               }`}
             />
           )}
@@ -133,7 +133,7 @@ const RSVPSection = ({
           <button
             type="submit"
             className={`w-full bg-[#D9C5B2] py-1 rounded-md text-3xl font-semibold text-white montecarlo-regular ${
-              inView7 ? "animate-fade-in-up delay-800" : "opacity-0"
+              inView9 ? "animate-fade-in-up delay-800" : "opacity-0"
             }`}
             onClick={createPost}
           >
@@ -144,7 +144,7 @@ const RSVPSection = ({
         {/* Daftar Komentar */}
         <div
           className={`mt-6 text-left ${
-            inView7 ? "animate-fade-in-up delay-900" : "opacity-0"
+            inView9 ? "animate-fade-in-up delay-900" : "opacity-0"
           }`}
         >
           <h3 className="text-3xl font-semibold mb-2 text-[#444444] tangerine-bold">
