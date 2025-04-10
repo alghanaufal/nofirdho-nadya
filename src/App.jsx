@@ -14,7 +14,6 @@ import {
   ThanksSection,
 } from "./components";
 import "./app.css";
-// import ThaksSection from "./components/ThanksSection";
 
 const images = [
   "/1.jpeg",

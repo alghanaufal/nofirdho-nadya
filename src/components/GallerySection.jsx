@@ -73,13 +73,17 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
       </p>
 
       {/* Tab Buttons */}
-      <div className="flex justify-center border-t border-[#444444] pt-4 mb-4">
+      <div
+        className={`flex justify-center border-t border-[#444444] pt-4 mb-4 ${
+          inView9 ? "animate-fade-in-up" : "opacity-0"
+        }`}
+      >
         <button
           className={`flex items-center gap-1 px-16 py-4 text-sm font-semibold uppercase tracking-widest transition-all duration-400 ease-in-out ${
             activeTab === "posts"
               ? "border-t-2 border-[#444444] text-[#444444]"
               : "opacity-50"
-          }`}
+          } ${inView9 ? "animate-fade-in-up" : "opacity-0"}`}
           onClick={() => setActiveTab("posts")}
         >
           <FaCameraRetro />
@@ -89,7 +93,7 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
             activeTab === "saved"
               ? "border-t-2 border-[#444444] text-[#444444]"
               : "opacity-50"
-          }`}
+          } ${inView9 ? "animate-fade-in-up" : "opacity-0"}`}
           onClick={() => setActiveTab("saved")}
         >
           <RiTreeFill />
@@ -97,7 +101,11 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
       </div>
 
       {/* Gallery Content */}
-      <div className="w-full max-w-4xl mx-auto">
+      <div
+        className={`w-full max-w-4xl mx-auto transition-all duration-500 ease-in-out ${
+          inView9 ? "animate-fade-in-scale" : "opacity-0"
+        }`}
+      >
         <Swiper
           onSwiper={(swiper) => {
             mainSwiperRef.current = swiper;
