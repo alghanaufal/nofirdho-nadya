@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { FaRegImages, FaBookmark, FaUserTag } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Thumbs } from "swiper/modules";
@@ -9,6 +9,8 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
   const [activeTab, setActiveTab] = useState("posts");
   const [thumbsSwiper1, setThumbsSwiper1] = useState(null);
   const [thumbsSwiper2, setThumbsSwiper2] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const mainSwiperRef = useRef(null);
 
   const getGalleryImages = () => {
     switch (activeTab) {
@@ -16,8 +18,6 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
         return images1;
       case "saved":
         return images2;
-      case "tagged":
-        return images1.concat(images2); // atau konten lainnya
       default:
         return [];
     }
@@ -56,7 +56,7 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
           inView9 ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
-        Tabbed Gallery
+        Gallery
       </h2>
 
       {/* Tab Buttons */}
@@ -81,22 +81,16 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
         >
           <FaRegImages />
         </button>
-        <button
-          className={`flex items-center gap-1 px-4 py-2 text-sm font-semibold uppercase tracking-widest ${
-            activeTab === "tagged"
-              ? "border-t-2 border-black text-black"
-              : "opacity-50"
-          }`}
-          onClick={() => setActiveTab("tagged")}
-        >
-          <FaBookmark />
-        </button>
       </div>
 
       {/* Gallery Content */}
       <div className="w-full max-w-4xl mx-auto">
         <Swiper
-          key={`gallery-${activeTab}-${!!currentThumbsSwiper}`}
+          onSwiper={(swiper) => {
+            mainSwiperRef.current = swiper;
+          }}
+          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+          initialSlide={activeIndex}
           spaceBetween={10}
           thumbs={{ swiper: currentThumbsSwiper }}
           modules={[Thumbs]}
@@ -118,6 +112,7 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
           spaceBetween={10}
           slidesPerView={4}
           watchSlidesProgress
+          slideToClickedSlide={true}
           modules={[Thumbs]}
           className="rounded-md"
         >
@@ -126,7 +121,13 @@ const GallerySection = ({ ref9, inView9, images1, images2, bgImage }) => {
               <img
                 src={src}
                 alt={`Thumb-${idx}`}
-                className="w-full h-24 object-cover cursor-pointer rounded-md"
+                className={`w-full h-24 object-cover cursor-pointer rounded-md ${
+                  idx === activeIndex ? "ring-2 ring-black" : ""
+                }`}
+                onClick={() => {
+                  setActiveIndex(idx);
+                  mainSwiperRef.current?.slideTo(idx);
+                }}
               />
             </SwiperSlide>
           ))}
