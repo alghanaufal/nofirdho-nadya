@@ -29,19 +29,22 @@ const images = [
   "/10.JPG",
 ];
 
-const imggallery = [
-  "/11.JPG",
-  "/12.JPG",
-  "/16.JPG",
-  "/15.JPG",
-  "/23.JPG",
-  "/22.JPG",
+const imggallery1 = [
   "/3.jpeg",
   "/7.JPG",
   "/4.jpeg",
   "/5.jpeg",
   "/9.JPG",
   "/10.JPG",
+];
+
+const imggallery2 = [
+  "/11.JPG",
+  "/12.JPG",
+  "/16.JPG",
+  "/15.JPG",
+  "/23.JPG",
+  "/22.JPG",
 ];
 
 const bgfull = "/Pict1.jpg";
@@ -262,7 +265,8 @@ export default function App() {
           <GallerySection
             ref9={ref9}
             inView9={inView9}
-            images={imggallery}
+            images1={imggallery1}
+            images2={imggallery2}
             bgImage={bgfull2}
           />
           <GiftSection ref8={ref8} inView8={inView8} bgImage={bgfull2} />
