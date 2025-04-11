@@ -8,3 +8,4 @@ export { default as GiftSection } from "./GiftSection";
 export { default as GallerySection } from "./GallerySection";
 export { default as MusicControl } from "./MusicControl";
 export { default as ThanksSection } from "./ThanksSection";
+export { default as FooterSection } from "./FooterSection";
