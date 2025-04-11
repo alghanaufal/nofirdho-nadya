@@ -3,7 +3,7 @@ import { RiInstagramFill, RiGithubFill } from "react-icons/ri";
 
 const FooterSection = () => {
   return (
-    <footer className="text-center py-6 border-t border-[#D9C5B2] bg-[#FADADD]">
+    <footer className="text-center py-6 border-t border-[#FADADD] bg-[#D9C5B2]">
       <div className="flex justify-center gap-8 mb-4 text-2xl">
         <a
           href="https://www.instagram.com/algha_jpg/"
