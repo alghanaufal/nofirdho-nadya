@@ -281,7 +281,6 @@ export default function App() {
           />
           <GiftSection ref11={ref11} inView11={inView11} bgImage={bgfull2} />
           <ThanksSection ref12={ref12} inView12={inView12} bgImage={bgfull2} />
-          <ThanksSection ref12={ref12} inView12={inView12} bgImage={bgfull2} />
           <FooterSection />
         </div>
       </div>
