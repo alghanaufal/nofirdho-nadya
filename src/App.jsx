@@ -127,7 +127,6 @@ export default function App() {
   const { ref: ref10, inView: inView10 } = useInView({ threshold: 0.1 });
   const { ref: ref11, inView: inView11 } = useInView({ threshold: 0.1 });
   const { ref: ref12, inView: inView12 } = useInView({ threshold: 0.1 });
-  const { ref: ref13, inView: inView13 } = useInView({ threshold: 0.1 });
 
   useEffect(() => {
     const interval = setInterval(() => {
