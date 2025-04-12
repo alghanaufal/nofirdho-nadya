@@ -1,4 +1,5 @@
 import React from "react";
+import { FaBookQuran } from "react-icons/fa6";
 
 const InvitationSection = ({ ref1, inView1, bgImage }) => {
   return (
@@ -38,7 +39,7 @@ const InvitationSection = ({ ref1, inView1, bgImage }) => {
           />
           <div className="p-6">
             <p
-              className={`text-center text-xl leading-tight mb-4 tangerine-regular text-[#444444] ${
+              className={`text-center text-xs leading-tight mb-4 hedvig-letters-serif-text text-[#444444] ${
                 inView1 ? "animate-fade-in-scale" : ""
               }`}
             >
@@ -50,11 +51,12 @@ const InvitationSection = ({ ref1, inView1, bgImage }) => {
               berpikir"
             </p>
             <h2
-              className={`text-2xl font-bold mb-2 charm-bold text-[#3A3A3A] ${
+              className={`text-2xl font-bold mb-2 charm-bold text-[#3A3A3A] flex flex-col items-center justify-center ${
                 inView1 ? "animate-fade-in-scale" : ""
               }`}
             >
-              Ar Rum ayat 21
+              <span>Ar Rum ayat 21</span>
+              <FaBookQuran />
             </h2>
           </div>
         </div>

@@ -57,7 +57,7 @@ const CoupleSection = ({
       </h2>
       <p
         ref={ref2}
-        className={`charm-regular text-[#444444] mb-4 rounded-lg ${
+        className={`text-xs hedvig-letters-serif-text text-[#444444] mb-4 rounded-lg ${
           inView2 ? "animate-fade-in-scale" : "opacity-0"
         }`}
         style={{

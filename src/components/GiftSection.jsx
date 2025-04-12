@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import mandiriLogo from "undangan/public/mandiri.png";
 import bsiLogo from "undangan/public/bsi.png";
+import { LuCopy } from "react-icons/lu";
 
 const GiftSection = ({ ref11, inView11, bgImage }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,10 +52,10 @@ const GiftSection = ({ ref11, inView11, bgImage }) => {
           <p className="mb-1 hedvig-letters-serif-text">A.n Rohadatul Nadya</p>
           <p className="mb-3 hedvig-letters-serif-text">1560022744793</p>
           <button
-            className="px-4 py-2 bg-[#D9C5B2] text-white rounded hover:bg-amber-700 transition-colors"
+            className="px-4 py-2 bg-[#D9C5B2] text-white rounded hover:bg-amber-700 transition-colors flex items-center gap-2"
             onClick={() => copyToClipboard("1560022744793")}
           >
-            Salin Rekening
+            Salin Rekening <LuCopy />
           </button>
         </div>
         <div
@@ -66,10 +67,10 @@ const GiftSection = ({ ref11, inView11, bgImage }) => {
           <p className="mb-1 hedvig-letters-serif-text">A.n Nofridho Aulya</p>
           <p className="mb-3 hedvig-letters-serif-text">7025031778</p>
           <button
-            className="px-4 py-2 bg-[#D9C5B2] text-white rounded hover:bg-amber-700 transition-colors"
+            className="px-4 py-2 bg-[#D9C5B2] text-white rounded hover:bg-amber-700 transition-colors flex items-center gap-2"
             onClick={() => copyToClipboard("7025031778")}
           >
-            Salin Rekening
+            Salin Rekening <LuCopy />
           </button>
         </div>
         <div
@@ -86,14 +87,14 @@ const GiftSection = ({ ref11, inView11, bgImage }) => {
             009/017 Kel.Jatimulya Kec.Tambun Selatan Bekasi Timur 17510
           </p>
           <button
-            className="px-4 py-2 bg-[#D9C5B2] text-white rounded hover:bg-amber-700 transition-colors"
+            className="px-4 py-2 bg-[#D9C5B2] text-white rounded hover:bg-amber-700 transition-colors flex items-center gap-2 justify-center mx-auto"
             onClick={() =>
               copyToClipboard(
                 "Perumahan Pondok Timur Indah 1, jalan Harimau III no.81A RT/RW 009/017 Kel.Jatimulya Kec.Tambun Selatan Bekasi Timur 17510"
               )
             }
           >
-            Salin Alamat
+            Salin Alamat <LuCopy />
           </button>
         </div>
       </div>

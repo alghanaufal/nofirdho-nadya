@@ -1,4 +1,5 @@
 import React from "react";
+import { RiScrollToBottomLine } from "react-icons/ri";
 
 const LandingSection = ({ guestName, handleScroll }) => {
   return (
@@ -27,7 +28,7 @@ const LandingSection = ({ guestName, handleScroll }) => {
         <h2 className="text-[#444444] m-2 animate-fade-in-up charm-bold">
           THE WEDDING OF
         </h2>
-        <h1 className="text-3xl md:text-5xl charm-bold mb-4 animate-fade-in-scale animate-letter-spacing text-[#3A3A3A]">
+        <h1 className="text-4xl md:text-5xl tangerine-bold mb-4 animate-fade-in-scale animate-letter-spacing text-[#3A3A3A]">
           NADYA <br />&<br /> NOFRIDHO
         </h1>
         <p
@@ -48,10 +49,11 @@ const LandingSection = ({ guestName, handleScroll }) => {
         </p>
         <button
           onClick={handleScroll}
-          className="bg-[#D9C5B2] text-white hover:bg-white hover:text-[#D9C5B2] px-6 py-2 rounded-full  transition animate-fade-in-up z-[9999] charm-bold"
+          className="bg-[#D9C5B2] text-white hover:bg-white hover:text-[#D9C5B2] px-6 py-2 rounded-full transition animate-fade-in-up z-[9999] charm-bold flex items-center gap-2"
           style={{ animationDelay: "0.8s" }}
         >
-          Buka Undangan
+          <span>Buka Undangan</span>
+          <RiScrollToBottomLine />
         </button>
       </div>
       <img

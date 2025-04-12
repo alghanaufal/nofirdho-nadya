@@ -59,7 +59,7 @@ const ThaksSection = ({ ref12, inView12, bgImage }) => {
             <div className="p-2 pt-6">
               <p
                 ref={ref12}
-                className={`text-sm charm-regular text-[#3A3A3A] mb-4 ${
+                className={`text-xs hedvig-letters-serif-text text-[#3A3A3A] mb-4 ${
                   inView12 ? "animate-fade-in-up" : "opacity-0"
                 }`}
               >

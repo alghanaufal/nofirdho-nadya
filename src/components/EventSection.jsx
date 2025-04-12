@@ -1,4 +1,5 @@
 import React from "react";
+import { MdOutlineLocationOn } from "react-icons/md";
 
 const EventSection = ({
   ref6,
@@ -82,11 +83,12 @@ const EventSection = ({
             href="https://maps.app.goo.gl/nT3LnFo4xuWo3gMA8"
             target="_blank"
             rel="noopener noreferrer"
-            className={`bg-[#D9C5B2] text-[#FDFBF7] px-6 py-2 rounded-full transition ${
+            className={`bg-[#D9C5B2] text-[#FDFBF7] px-6 py-2 rounded-full transition flex items-center gap-2 ${
               inView6 ? "animate-fade-in-up delay-900" : "opacity-0"
             }`}
           >
             Lokasi
+            <MdOutlineLocationOn />
           </a>
         </div>
       </div>
@@ -160,11 +162,12 @@ const EventSection = ({
             href="https://maps.app.goo.gl/nT3LnFo4xuWo3gMA8"
             target="_blank"
             rel="noopener noreferrer"
-            className={`bg-[#D9C5B2] text-[#FDFBF7] px-6 py-2 rounded-full transition ${
+            className={`bg-[#D9C5B2] text-[#FDFBF7] px-6 py-2 rounded-full transition flex items-center gap-2 ${
               inView7 ? "animate-fade-in-up delay-900" : "opacity-0"
             }`}
           >
             Lokasi
+            <MdOutlineLocationOn />
           </a>
         </div>
       </div>
@@ -238,11 +241,12 @@ const EventSection = ({
             href="https://maps.app.goo.gl/Z8YhDppZNBWkP1tR9"
             target="_blank"
             rel="noopener noreferrer"
-            className={`bg-[#D9C5B2] text-[#FDFBF7] px-6 py-2 rounded-full transition ${
+            className={`bg-[#D9C5B2] text-[#FDFBF7] px-6 py-2 rounded-full transition flex items-center gap-2 ${
               inView8 ? "animate-fade-in-up delay-900" : "opacity-0"
             }`}
           >
             Lokasi
+            <MdOutlineLocationOn />
           </a>
         </div>
       </div>
