@@ -145,7 +145,7 @@ const EventSection = ({
             inView7 ? "animate-fade-in-scale delay-900" : "opacity-0"
           }`}
         >
-          12.30 WIB - Selesai
+          12.30 WIB - 18.00 WIB
         </p>
         <p
           className={`text-gray-600 text-xs hedvig-letters-serif-text transition-opacity duration-500 ${
