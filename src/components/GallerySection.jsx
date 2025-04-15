@@ -53,7 +53,7 @@ const GallerySection = ({ ref10, inView10, images1, images2, bgImage }) => {
   return (
     <div
       className={`p-10 transition-colors duration-800 ease-in-out ${
-        activeTab === "saved" ? "bg-[#B6CFC4]" : "bg-[#FDFBF7]"
+        activeTab === "saved" ? "bg-[#FDFBF7]" : "bg-[#B6CFC4]"
       }`}
       ref={ref10}
     >
@@ -86,7 +86,7 @@ const GallerySection = ({ ref10, inView10, images1, images2, bgImage }) => {
           } ${inView10 ? "animate-fade-in-up" : "opacity-0"}`}
           onClick={() => setActiveTab("posts")}
         >
-          <FaCameraRetro />
+          <RiTreeFill />
         </button>
         <button
           className={`flex items-center gap-1 px-16 py-4 text-sm font-semibold uppercase tracking-widest transition-all duration-400 ease-in-out ${
@@ -96,7 +96,7 @@ const GallerySection = ({ ref10, inView10, images1, images2, bgImage }) => {
           } ${inView10 ? "animate-fade-in-up" : "opacity-0"}`}
           onClick={() => setActiveTab("saved")}
         >
-          <RiTreeFill />
+          <FaCameraRetro />
         </button>
       </div>
 

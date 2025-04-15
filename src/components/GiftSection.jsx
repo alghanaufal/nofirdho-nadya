@@ -8,7 +8,7 @@ const GiftSection = ({ ref11, inView11, bgImage }) => {
 
   const copyToClipboard = (text) => {
     navigator.clipboard.writeText(text);
-    alert("Account number copied to clipboard!");
+    alert("Copied to clipboard!");
   };
 
   const handleToggle = () => {

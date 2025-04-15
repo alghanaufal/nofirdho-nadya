@@ -30,21 +30,21 @@ const images = [
 ];
 
 const imggallery1 = [
-  "/3.jpeg",
-  "/7.JPG",
-  "/4.jpeg",
-  "/5.jpeg",
-  "/9.JPG",
-  "/10.JPG",
-];
-
-const imggallery2 = [
   "/11.JPG",
   "/12.JPG",
   "/16.JPG",
   "/15.JPG",
   "/23.JPG",
   "/22.JPG",
+];
+
+const imggallery2 = [
+  "/3.jpeg",
+  "/7.JPG",
+  "/4.jpeg",
+  "/5.jpeg",
+  "/9.JPG",
+  "/10.JPG",
 ];
 
 const bgfull = "/Pict1.jpg";
