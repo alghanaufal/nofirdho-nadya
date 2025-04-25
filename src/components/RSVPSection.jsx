@@ -55,7 +55,7 @@ const RSVPSection = ({
           Terimakasih
         </p>
 
-        {/* Statistik Hadir/Tidak Hadir */}
+        {/* Statistik Hadir/Tidak Hadir
         <div
           className={`flex justify-center gap-4 my-4 ${
             inView9 ? "animate-fade-in-scale delay-300" : "opacity-0"
@@ -67,10 +67,10 @@ const RSVPSection = ({
           <div className="bg-[#FADADD] px-4 py-2 rounded text-[#5C2A4C] font-semibold charm-regular">
             ❌ {notAttending} Tidak Hadir
           </div>
-        </div>
+        </div> */}
 
         {/* Formulir */}
-        <form className="space-y-3">
+        <form className="space-y-3 my-4">
           <input
             type="text"
             placeholder="Nama"

@@ -30,10 +30,10 @@ const images = [
 ];
 
 const imggallery1 = [
-  "/11.JPG",
-  "/12.JPG",
-  "/16.JPG",
-  "/15.JPG",
+  "/25.PNG",
+  "/26.PNG",
+  "/27.PNG",
+  "/28.PNG",
   "/23.JPG",
   "/22.JPG",
 ];
@@ -53,7 +53,7 @@ const bgfull2 = "/Pict2.jpg";
 export default function App() {
   const [isScrollAllowed, setIsScrollAllowed] = useState(false);
   const inviteSectionRef = useRef(null);
-  const eventDate = new Date("2025-05-03T09:00:00").getTime();
+  const eventDate = new Date("2025-05-03T10:00:00").getTime();
   const [bgImage, setBgImage] = useState(images[0]);
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
   const [isPlaying, setIsPlaying] = useState(true);
