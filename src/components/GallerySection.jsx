@@ -159,39 +159,3 @@ const GallerySection = ({ ref10, inView10, images1, images2, bgImage }) => {
 };
 
 export default GallerySection;
-
-/* <div
-  className={`gallery ${inView10 ? "animate-fade-in-up" : ""}`} // Tambahkan class animasi saat inView true
->
-  {images1.map((img, index) => (
-    <div key={index} className="gallery-item">
-      <img src={img} alt={`Foto ${index + 1}`} className="gallery-img" />
-    </div>
-  ))}
-</div>
-<div className="w-full max-w-4xl mx-auto p-4">
-  <Slider {...setting1}>
-    {images1.map((src, idx) => (
-      <div key={idx}>
-        <img
-          src={src}
-          className="w-full h-full object-cover rounded-lg"
-          alt={`slide-${idx}`}
-        />
-      </div>
-    ))}
-  </Slider>
-</div>
-<div className="w-full max-w-4xl mx-auto p-4">
-  <Slider {...setting2}>
-    {images2.map((src, idx) => (
-      <div key={idx}>
-        <img
-          src={src}
-          className="w-full h-full object-cover rounded-lg"
-          alt={`slide-${idx}`}
-        />
-      </div>
-    ))}
-  </Slider>
-</div> */

@@ -14,6 +14,7 @@ import {
   ThanksSection,
   FooterSection,
 } from "./components";
+import Data from "../data.json";
 import "./app.css";
 
 const images = [
@@ -53,7 +54,7 @@ const bgfull2 = "/Pict2.jpg";
 export default function App() {
   const [isScrollAllowed, setIsScrollAllowed] = useState(false);
   const inviteSectionRef = useRef(null);
-  const eventDate = new Date("2025-05-03T10:00:00").getTime();
+  const eventDate = new Date(Data.eventDate).getTime();
   const [bgImage, setBgImage] = useState(images[0]);
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
   const [isPlaying, setIsPlaying] = useState(true);
@@ -234,7 +235,11 @@ export default function App() {
           togglePlayPause={togglePlayPause}
           audioRef={audioRef} // Teruskan audioRef ke MusicControl
         />
-        <LandingSection guestName={guestName} handleScroll={handleScroll} />
+        <LandingSection
+          guestName={guestName}
+          handleScroll={handleScroll}
+          DataName={Data.name}
+        />
         <div ref={inviteSectionRef} className="text-center">
           <InvitationSection ref1={ref1} inView1={inView1} bgImage={bgfull2} />
           <CoupleSection
@@ -245,12 +250,15 @@ export default function App() {
             ref4={ref4}
             inView4={inView4}
             bgImage={bgfull2}
+            DataName={Data.name}
+            DataMedia={Data.sosmed}
           />
           <CountdownSection
             ref5={ref5}
             inView5={inView5}
             timeLeft={timeLeft}
             bgImage={bgfull2}
+            date={Data.date}
           />
           <EventSection
             ref6={ref6}
@@ -260,6 +268,9 @@ export default function App() {
             inView7={inView7}
             inView8={inView8}
             bgImage={bgfull}
+            date={Data.detail_date}
+            time={Data.time}
+            address={Data.address}
           />
           <RSVPSection
             ref9={ref9}
@@ -279,8 +290,20 @@ export default function App() {
             images2={imggallery2}
             bgImage={bgfull2}
           />
-          <GiftSection ref11={ref11} inView11={inView11} bgImage={bgfull2} />
-          <ThanksSection ref12={ref12} inView12={inView12} bgImage={bgfull2} />
+          <GiftSection
+            ref11={ref11}
+            inView11={inView11}
+            bgImage={bgfull2}
+            rec_name={Data.rec_name}
+            rec_number={Data.rec_number}
+            address={Data.address}
+          />
+          <ThanksSection
+            ref12={ref12}
+            inView12={inView12}
+            bgImage={bgfull2}
+            name={Data.name}
+          />
           <FooterSection />
         </div>
       </div>

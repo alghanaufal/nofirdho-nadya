@@ -1,6 +1,6 @@
 import React from "react";
 
-const ThaksSection = ({ ref12, inView12, bgImage }) => {
+const ThaksSection = ({ ref12, inView12, bgImage, name }) => {
   return (
     <>
       <div
@@ -73,9 +73,9 @@ const ThaksSection = ({ ref12, inView12, bgImage }) => {
                   inView12 ? "animate-letter-spacing" : "opacity-0"
                 }`}
               >
-                Nadya
+                {name[0]}
                 <br /> & <br />
-                Nofridho
+                {name[1]}
               </h2>
             </div>
           </div>

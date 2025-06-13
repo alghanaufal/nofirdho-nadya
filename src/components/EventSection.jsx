@@ -9,6 +9,9 @@ const EventSection = ({
   inView7,
   inView8,
   bgImage,
+  date,
+  time,
+  address,
 }) => {
   return (
     <div
@@ -59,28 +62,27 @@ const EventSection = ({
             inView6 ? "animate-fade-in-scale delay-800" : "opacity-0"
           }`}
         >
-          Sabtu, 03 Mei 2025
+          {date[0]}
         </p>
         <p
           className={`text-[#3A3A3A] charm-bold text-base transition-opacity duration-500 ${
             inView6 ? "animate-fade-in-scale delay-900" : "opacity-0"
           }`}
         >
-          10.00 WIB - Selesai
+          {time[0]}
         </p>
         <p
           className={`text-gray-600 text-xs hedvig-letters-serif-text transition-opacity duration-500 ${
             inView6 ? "animate-fade-in-up delay-900" : "opacity-0"
           }`}
         >
-          Perumahan Pondok Timur Indah 1, jalan Harimau III no.81A RT/RW 009/017
-          Kel.Jatimulya Kec.Tambun Selatan Bekasi Timur 17510
+          {address[0]}
         </p>
 
         {/* Lokasi Map */}
         <div className="mt-4 w-full flex justify-center">
           <a
-            href="https://maps.app.goo.gl/nT3LnFo4xuWo3gMA8"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className={`bg-[#D9C5B2] text-[#FDFBF7] px-6 py-2 rounded-full transition flex items-center gap-2 ${
@@ -138,28 +140,27 @@ const EventSection = ({
             inView7 ? "animate-fade-in-scale delay-800" : "opacity-0"
           }`}
         >
-          Sabtu, 03 Mei 2025
+          {date[1]}
         </p>
         <p
           className={`text-[#3A3A3A] charm-bold text-base transition-opacity duration-500 ${
             inView7 ? "animate-fade-in-scale delay-900" : "opacity-0"
           }`}
         >
-          12.30 WIB - 18.00 WIB
+          {time[1]}
         </p>
         <p
           className={`text-gray-600 text-xs hedvig-letters-serif-text transition-opacity duration-500 ${
             inView7 ? "animate-fade-in-up delay-900" : "opacity-0"
           }`}
         >
-          Perumahan Pondok Timur Indah 1, jalan Harimau III no.81A RT/RW 009/017
-          Kel.Jatimulya Kec.Tambun Selatan Bekasi Timur 17510
+          {address[0]}
         </p>
 
         {/* Lokasi Map */}
         <div className="mt-4 w-full flex justify-center">
           <a
-            href="https://maps.app.goo.gl/nT3LnFo4xuWo3gMA8"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className={`bg-[#D9C5B2] text-[#FDFBF7] px-6 py-2 rounded-full transition flex items-center gap-2 ${
@@ -217,28 +218,27 @@ const EventSection = ({
             inView8 ? "animate-fade-in-scale delay-800" : "opacity-0"
           }`}
         >
-          Senin, 19 Mei 2025
+          {date[1]}
         </p>
         <p
           className={`text-[#3A3A3A] charm-bold text-base transition-opacity duration-500 ${
             inView8 ? "animate-fade-in-scale delay-900" : "opacity-0"
           }`}
         >
-          10.00 WIB - Selesai
+          {time[1]}
         </p>
         <p
           className={`text-gray-600 text-xs hedvig-letters-serif-text transition-opacity duration-500 ${
             inView8 ? "animate-fade-in-up delay-900" : "opacity-0"
           }`}
         >
-          Jl. H. Agus Salim, Gang Makmur No. 18, Kec. Pariaman Tengah, Kota
-          Pariaman
+          {address[0]}
         </p>
 
         {/* Lokasi Map */}
         <div className="mt-4 w-full flex justify-center">
           <a
-            href="https://maps.app.goo.gl/Z8YhDppZNBWkP1tR9"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className={`bg-[#D9C5B2] text-[#FDFBF7] px-6 py-2 rounded-full transition flex items-center gap-2 ${

@@ -69,7 +69,7 @@ const RSVPSection = ({
           </div>
         </div> */}
 
-        {/* Formulir */}
+        {/* Form */}
         <form className="space-y-3 my-4">
           <input
             type="text"
@@ -192,25 +192,3 @@ const RSVPSection = ({
 };
 
 export default RSVPSection;
-
-{
-  /* <h3 className="font-semibold mb-2 text-gray-700">Komentar:</h3> */
-}
-{
-  /* <div className="max-h-80 overflow-y-auto space-y-2">
-                {posts.map((post) => (
-                  <div
-                    className="bg-white p-3 rounded-lg shadow border border-gray-300"
-                    key={post.id}
-                  >
-                    <p className="font-semibold text-gray-700">
-                      {post.name} {post.presence ? "✅" : "❌"}
-                    </p>
-                    <p className="text-gray-600">{post.address}</p>
-                    <p className="text-gray-500 text-sm">
-                      {new Date(post.time).toLocaleString()}
-                    </p>
-                  </div>
-                ))}
-              </div> */
-}

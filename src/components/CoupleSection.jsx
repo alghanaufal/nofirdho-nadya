@@ -8,6 +8,8 @@ const CoupleSection = ({
   ref4,
   inView4,
   bgImage,
+  DataName,
+  DataMedia,
 }) => {
   return (
     <div
@@ -87,18 +89,18 @@ const CoupleSection = ({
               inView3 ? "animate-letter-spacing" : "opacity-0"
             }`}
           >
-            Rohadatul Nadya Maurani, S.Si
+            {DataName[2]}
           </h2>
           <p
             className={`charm-regular text-[#3A3A3A] leading-tight mb-4 ${
               inView3 ? "animate-letter-spacing" : "opacity-0"
             }`}
           >
-            Putri ke 1 dari Bapak Rasul Hamidi & Ibu Jasmaniar
+            Putri ke 1 dari Bapak {DataName[4]} & Ibu {DataName[5]}
           </p>
           <section className="flex justify-center items-center">
             <a
-              href="https://www.instagram.com/rnadyaaaaa"
+              href={DataMedia[0]}
               className={`group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-[#D9C5B2] text-white font-semibold ${
                 inView3 ? "animate-fade-in-up" : "opacity-0"
               }`}
@@ -146,18 +148,18 @@ const CoupleSection = ({
               inView4 ? "animate-letter-spacing" : "opacity-0"
             }`}
           >
-            Nofridho Aulya, S.sos
+            {DataName[3]}
           </h2>
           <p
             className={`charm-regular text-[#3A3A3A] leading-tight mb-4 ${
               inView4 ? "animate-letter-spacing" : "opacity-0"
             }`}
           >
-            Putra ke 2 dari Bapak Aung S.Pd & Ibu Baiyar S.Pd
+            Putra ke 2 dari Bapak {DataName[6]} & Ibu {DataName[7]}
           </p>
           <section className="flex justify-center items-center mb-6">
             <a
-              href="https://www.instagram.com/nofridhoaulya"
+              href={DataMedia[1]}
               className={`group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-[#D9C5B2] text-white font-semibold ${
                 inView4 ? "animate-fade-in-up" : "opacity-0"
               }`}

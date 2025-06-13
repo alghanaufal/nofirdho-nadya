@@ -1,6 +1,6 @@
 import React from "react";
 
-const CountdownSection = ({ ref5, inView5, timeLeft, bgImage }) => {
+const CountdownSection = ({ ref5, inView5, timeLeft, bgImage, date }) => {
   return (
     <div
       ref={ref5}
@@ -29,7 +29,7 @@ const CountdownSection = ({ ref5, inView5, timeLeft, bgImage }) => {
           backgroundColor: "rgba(255, 255, 255, 0.7)",
         }}
       >
-        03.05.2025
+        {date}
       </p>
 
       <div className="grid grid-cols-4 gap-2 md:gap-4 mt-6 mx-4 justify-center">

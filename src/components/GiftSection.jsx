@@ -3,7 +3,14 @@ import mandiriLogo from "undangan/public/mandiri.png";
 import bsiLogo from "undangan/public/bsi.png";
 import { LuCopy } from "react-icons/lu";
 
-const GiftSection = ({ ref11, inView11, bgImage }) => {
+const GiftSection = ({
+  ref11,
+  inView11,
+  bgImage,
+  rec_name,
+  rec_number,
+  address,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const copyToClipboard = (text) => {
@@ -49,11 +56,11 @@ const GiftSection = ({ ref11, inView11, bgImage }) => {
           }`}
         >
           <img src={mandiriLogo} alt="Mandiri Logo" className="h-10 mb-2" />
-          <p className="mb-1 hedvig-letters-serif-text">A.n Rohadatul Nadya</p>
-          <p className="mb-3 hedvig-letters-serif-text">1560022744793</p>
+          <p className="mb-1 hedvig-letters-serif-text">{rec_name[1]}</p>
+          <p className="mb-3 hedvig-letters-serif-text">{rec_number[1]}</p>
           <button
             className="px-4 py-2 bg-[#D9C5B2] text-white rounded hover:bg-amber-700 transition-colors flex items-center gap-2"
-            onClick={() => copyToClipboard("1560022744793")}
+            onClick={() => copyToClipboard(rec_number[1])}
           >
             Salin Rekening <LuCopy />
           </button>
@@ -64,11 +71,11 @@ const GiftSection = ({ ref11, inView11, bgImage }) => {
           }`}
         >
           <img src={bsiLogo} alt="BSI Logo" className="h-10 mb-2" />
-          <p className="mb-1 hedvig-letters-serif-text">A.n Nofridho Aulya</p>
-          <p className="mb-3 hedvig-letters-serif-text">7025031778</p>
+          <p className="mb-1 hedvig-letters-serif-text">{rec_name[0]}</p>
+          <p className="mb-3 hedvig-letters-serif-text">{rec_number[0]}</p>
           <button
             className="px-4 py-2 bg-[#D9C5B2] text-white rounded hover:bg-amber-700 transition-colors flex items-center gap-2"
-            onClick={() => copyToClipboard("7025031778")}
+            onClick={() => copyToClipboard(rec_number[0])}
           >
             Salin Rekening <LuCopy />
           </button>
@@ -81,18 +88,10 @@ const GiftSection = ({ ref11, inView11, bgImage }) => {
           <h2 className="text-4xl font-bold text-[#444444] mb-2 charm-bold">
             Rumah
           </h2>
-          <p className="mb-3 text-xs hedvig-letters-serif-text">
-            {" "}
-            Perumahan Pondok Timur Indah 1, jalan Harimau III no.81A RT/RW
-            009/017 Kel.Jatimulya Kec.Tambun Selatan Bekasi Timur 17510
-          </p>
+          <p className="mb-3 text-xs hedvig-letters-serif-text">{address[0]}</p>
           <button
             className="px-4 py-2 bg-[#D9C5B2] text-white rounded hover:bg-amber-700 transition-colors flex items-center gap-2 justify-center mx-auto"
-            onClick={() =>
-              copyToClipboard(
-                "Perumahan Pondok Timur Indah 1, jalan Harimau III no.81A RT/RW 009/017 Kel.Jatimulya Kec.Tambun Selatan Bekasi Timur 17510"
-              )
-            }
+            onClick={() => copyToClipboard(address[0])}
           >
             Salin Alamat <LuCopy />
           </button>

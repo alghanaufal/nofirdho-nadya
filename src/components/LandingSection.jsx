@@ -1,7 +1,7 @@
 import React from "react";
 import { RiScrollToBottomLine } from "react-icons/ri";
 
-const LandingSection = ({ guestName, handleScroll }) => {
+const LandingSection = ({ guestName, handleScroll, DataName }) => {
   return (
     // Bagian Landing
     <div className="bg-cover bg-center min-h-screen flex items-center justify-center p-4 w-full relative">
@@ -29,7 +29,7 @@ const LandingSection = ({ guestName, handleScroll }) => {
           THE WEDDING OF
         </h2>
         <h1 className="text-4xl md:text-5xl tangerine-bold mb-4 animate-fade-in-scale animate-letter-spacing text-[#3A3A3A]">
-          NADYA <br />&<br /> NOFRIDHO
+          {DataName[1]} <br />&<br /> {DataName[0]}
         </h1>
         <p
           className="text-gray-800 mb-4 animate-fade-in-up charm-regular"
